@@ -8,9 +8,8 @@ const Nav = () => {
                 <h1>Logo</h1>
             </div>
             <ul className="nav__list">
-                <li className="nav__list-item"><a href="#">Home</a></li>
                 <li className="nav__list-item"><a href="#">Programs</a>
-                    <ul className="nav__dropdown">
+                    <ul className="nav__dropdown dropdown-spot">
                         <li className="nav__dropdown-link"><a href="#">Kettlebell Club</a></li>
                         <li className="nav__dropdown-link"><a href="#">Personal Training</a></li>
                         <li className="nav__dropdown-link"><a href="#">Coaching</a></li>
