@@ -33,7 +33,11 @@ const Nav = () => {
                     </div>
                 </div>
                 <ul className="overlay__list">
-                    <li className="overlay__list-item" onClick={() => setDropdownOpen(!dropdownOpen)}><a href="#">Programs</a><span className="overlay__click">&or;</span>
+                    <li className="overlay__list-item" onClick={() => setDropdownOpen(!dropdownOpen)}><a href="#">Programs</a>
+                        <div className={`chevron ${dropdownOpen ? "chevron-show" : "hide"}`}>
+                            <span className="chevron__bar"></span>
+                            <span className="chevron__bar"></span>
+                        </div>
                         <ul className={`overlay__dropdown ${ dropdownOpen ? "show" : "hide" }`}>
                             <li className="overlay__dropdown-link"><a href="#">Kettlebell Club</a></li>
                             <li className="overlay__dropdown-link"><a href="#">Personal Training</a></li>
