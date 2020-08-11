@@ -108,10 +108,18 @@
         flex-direction: column;
         transition: right 300ms ease-in-out;
 
+        &__click {
+            position: absolute;
+            right: 1rem;
+            font-size: 1.5rem;
+            color: #fff;
+        }
+
         &__close {
             width: 100%;
             border-bottom: .5px solid #fff;
         }
+
         &__close-icon {
             width: 100%;
             position: relative;
@@ -140,23 +148,38 @@
             }
         }
 
-
         &.open {
             right: 0;
         }
 
         &__list {
             width: 100%;
-        }
 
-        &__list-item {
-            padding: 15px;
-            border-bottom: .2px solid #fff;
-
-            a:link, a:visited {
-                color: #fff;
+            .overlay__list-item {
+                padding: 15px;
+                border-bottom: .2px solid #fff;
+    
+                a:link, a:visited {
+                    color: #fff;
+                }
             }
         }
+
+        &__dropdown {
+            opacity: 0;
+            height: 0;
+
+            &.show {
+                opacity: 1;
+                height: initial;
+            }
+
+            .overlay__dropdown-link {
+                padding: 15px;
+            }
+        }
+
+
     }
 
     .overlay__dropdown {

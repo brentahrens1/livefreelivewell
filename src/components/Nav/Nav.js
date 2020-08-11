@@ -3,6 +3,7 @@ import '../../sass/_nav.scss'
 
 const Nav = () => {
     const [ isOpen, setIsOpen ] = useState(false)
+    const [ dropdownOpen, setDropdownOpen ] = useState(false)
     return (
         <div className="nav">
             <div className="nav__logo">
@@ -32,8 +33,8 @@ const Nav = () => {
                     </div>
                 </div>
                 <ul className="overlay__list">
-                    <li className="overlay__list-item"><a href="#">Programs</a>
-                        <ul className="overlay__dropdown">
+                    <li className="overlay__list-item" onClick={() => setDropdownOpen(!dropdownOpen)}><a href="#">Programs</a><span className="overlay__click">&or;</span>
+                        <ul className={`overlay__dropdown ${ dropdownOpen ? "show" : "hide" }`}>
                             <li className="overlay__dropdown-link"><a href="#">Kettlebell Club</a></li>
                             <li className="overlay__dropdown-link"><a href="#">Personal Training</a></li>
                             <li className="overlay__dropdown-link"><a href="#">Coaching</a></li>
