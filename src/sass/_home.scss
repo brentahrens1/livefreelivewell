@@ -51,6 +51,10 @@
         margin: 0 auto;
         margin-top: 3rem;
 
+        h1 {
+            margin-bottom: .5rem;
+        }
+
         .home__programs-image {
             width: 100%;
             img {
@@ -70,13 +74,13 @@
             }
 
             button {
-                padding: .5rem;
                 font-size: 1.1rem;
                 width: 10rem;
                 text-transform: uppercase;
                 font-weight: 700;
                 border: 3px solid #000;
                 background: transparent;
+                cursor: pointer;
             }
         }
     }
@@ -124,6 +128,7 @@
     
                 button {
                     width: 100%;
+                    padding: .5rem;
                 }
             }
         }
