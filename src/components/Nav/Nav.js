@@ -39,13 +39,13 @@ const Nav = () => {
                             <span className="chevron__bar"></span>
                         </div>
                         <ul className={`overlay__dropdown ${ dropdownOpen ? "show" : "hide" }`}>
-                            <li className="overlay__dropdown-link"><a href="#">Kettlebell Club</a></li>
-                            <li className="overlay__dropdown-link"><a href="#">Personal Training</a></li>
-                            <li className="overlay__dropdown-link"><a href="#">Coaching</a></li>
+                            <li className="overlay__dropdown-link" onClick={() => setIsOpen(false)}><a href="#">Kettlebell Club</a></li>
+                            <li className="overlay__dropdown-link" onClick={() => setIsOpen(false)}><a href="#">Personal Training</a></li>
+                            <li className="overlay__dropdown-link" onClick={() => setIsOpen(false)}><a href="#">Coaching</a></li>
                         </ul>
                     </li>
-                    <li className="overlay__list-item"><a href="#">About</a></li>
-                    <li className="overlay__list-item"><a href="#">Contact</a></li>
+                    <li className="overlay__list-item" onClick={() => setIsOpen(false)}><a href="#">About</a></li>
+                    <li className="overlay__list-item" onClick={() => setIsOpen(false)}><a href="#">Contact</a></li>
                 </ul>
             </div>
         </div>
