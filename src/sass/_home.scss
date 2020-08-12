@@ -72,13 +72,13 @@
             button {
                 padding: .5rem;
                 font-size: 1.1rem;
+                width: 10rem;
                 text-transform: uppercase;
                 font-weight: 700;
                 border: 3px solid #000;
                 background: transparent;
             }
         }
-
     }
 }
 
@@ -106,6 +106,24 @@
                     h4 {
                         margin-bottom: 0;
                     }
+                }
+            }
+        }
+
+        &__programs {
+    
+            .home__programs-content {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+    
+                p {
+                    width: 100%;
+                    margin-bottom: 1rem;
+                }
+    
+                button {
+                    width: 100%;
                 }
             }
         }
