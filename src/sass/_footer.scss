@@ -36,7 +36,8 @@
             display: flex;
             justify-content: space-between;
             width: 26rem;
-            margin-right: 1rem;
+            margin-right: 2rem;
+
             li {
                 margin: .2rem;
             }
@@ -63,23 +64,15 @@
         }
 
         &__social {
-            display: flex;
-            justify-content: space-between;
     
             ul {
                 width: 100%;
                 margin-bottom: 1.5rem;
 
-                li {
-                    margin: .2rem;
-                }
-
                 a:link, a:visited {
-                    color: #fff;
                     font-size: 1.1rem;
                 }
             }
-    
         }
     }
 }

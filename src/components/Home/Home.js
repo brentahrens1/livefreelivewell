@@ -1,7 +1,7 @@
 import React from 'react'
 import '../../sass/_home.scss'
 
-import kettleBellClub from '../../assets/images/test.jpg'
+import kettleBellClub from '../../assets/images/rodney-kettlebells.jpg'
 
 import { programs } from '../../const/programs'
  
@@ -10,9 +10,20 @@ const Home = () => {
         <div className="home">
             <div className="home__card">
                 <div className="home__card-message-inner">
-                    <div className="home__card-message-inner-content">
-                        <h1>Let's get shredded!</h1>
-                        <h4>Philosophy</h4>
+                    <div className="home__card-left">
+                        <div className="home__card-image">
+                            <img src={kettleBellClub} alt="Kettlebell Club" />
+                        </div>
+                    </div>
+                    <div className="home__card-right">
+                        <h1>Strength, Mobility and Stability</h1>
+                        <ul>
+                            <li>Remote / In Person training</li>
+                            <li>Coaching</li>
+                            <li>Weekly Fitnees Programs</li>
+                            <li>Lifestyle Change</li>
+                        </ul>
+                        <button>Philosophy</button>
                     </div>
                 </div>
             </div>
