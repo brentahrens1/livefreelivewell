@@ -1,13 +1,16 @@
 import React, { useState } from 'react'
 import '../../sass/_nav.scss'
 
+import navLogo from '../../assets/images/logos/transparent.PNG'
+
 const Nav = () => {
     const [ isOpen, setIsOpen ] = useState(false)
     const [ dropdownOpen, setDropdownOpen ] = useState(false)
+
     return (
         <div className="nav">
             <div className="nav__logo">
-                <h1>Logo</h1>
+                <img src={navLogo} alt="livefreelivewell" />
             </div>
             <ul className="nav__list">
                 <li className="nav__list-item"><a href="#">Programs</a>

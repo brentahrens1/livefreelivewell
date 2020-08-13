@@ -6,11 +6,11 @@
         background-image: linear-gradient(rgba(#E0E0E0, .6) 0%,
                                         transparent 100%,
                                         rgba(#E0E0E0, .6) 0%), 
-                                        url(../assets/images/rodney-kettlebells.jpg);
+                                        url(../assets/images/home-banner.png);
         background-size: cover;
         background-repeat: no-repeat;
         border-radius: 3px;
-        box-shadow: 0 1.5rem 4rem rgba(0,0,0,0.3);
+        box-shadow: 0 1rem 2.5rem rgba(0,0,0,0.2);
         height: 100vh;
 
         .home__card-message-inner {
@@ -50,8 +50,10 @@
         padding: 2rem;
         margin: 0 auto;
         margin-top: 3rem;
+        box-shadow: 0 1rem 2rem rgba(0,0,0,0.1);
 
         h1 {
+            text-transform: uppercase;
             margin-bottom: .5rem;
         }
 
@@ -75,7 +77,7 @@
 
             button {
                 font-size: 1.1rem;
-                width: 10rem;
+                width: 15rem;
                 text-transform: uppercase;
                 font-weight: 700;
                 border: 3px solid #000;
