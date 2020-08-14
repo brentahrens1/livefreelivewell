@@ -1,7 +1,7 @@
 import React from 'react'
 import '../../sass/_home.scss'
 
-import kettleBellClub from '../../assets/images/rodney-kettlebells.jpg'
+import Testimonials from '../Testimonials/Testimonials'
 
 import { programs } from '../../const/programs'
  
@@ -12,7 +12,7 @@ const Home = () => {
                 <div className="home__card-cta">
                     <h2>Strength & Mobility</h2>
                     <p>Regardless of your fitness level or experience, all are welcome. It’s about the individual’s journey, so you only have to live up to your own standards.</p>
-                    <button>What We Do</button>
+                    <button>Begin your journey</button>
                 </div>
             </div>
             {
@@ -29,6 +29,7 @@ const Home = () => {
                     </div>
                 )
             }
+            <Testimonials />
         </div>
     )
 }

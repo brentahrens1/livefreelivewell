@@ -1,5 +1,3 @@
-import kettlebellClub from '../assets/images/test.jpg'
-
 import kettlbells from '../assets/images/programs/kettlebell.jpg'
 import coaching from '../assets/images/programs/bench-press-bar.jpg'
 import training from '../assets/images/programs/training.jpg'

@@ -1,0 +1,29 @@
+.testimonials {
+    width: 100%;
+    margin-top: 2.5rem;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+
+    &__content {
+        position: relative;
+        height: 8rem;
+        margin-left: 1rem;
+        padding: 1rem;
+        border-radius: 5px;
+        background: #E0E0E0;
+
+        &:hover {
+            transform: scale(1.1);
+        }
+
+        p {
+            margin-bottom: 1rem;
+        }
+
+        h2 {
+            position: absolute;
+            bottom: .5rem;
+        }
+    }
+}
