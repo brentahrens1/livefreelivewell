@@ -4,71 +4,39 @@
     .home__card {
         position: relative;
         padding: 2rem;
-        background: #0E538F;
+        background-image: url(../assets//images//home-banner.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
         box-shadow: 0 1rem 2.5rem rgba(0,0,0,0.2);
-        height: 100%;
+        height: 100vh;
 
-        .home__card-message-inner {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-            align-items: center;
+        .home__card-cta {
+            background: rgba(255,255,255,0.7);
+            width: 30rem;
+            height: 13rem;
+            border-radius: 5px;
+            padding: 1rem;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
 
-            .home__card-left {
-                width: 50%;
-
-                .home__card-image {
-                    width: 100%;
-                    margin-top: 1rem;
-    
-                    img {
-                        width: 100%;
-                        border-radius: 5px;
-                    }
-                }
+            h2 {
+                margin-bottom: .5rem;
             }
-            
-            .home__card-right {
-                position: relative;
-                width: 50%;
-                margin-top: 2rem;
-                display: flex;
-                flex-direction: column;
 
-                h1 {
-                    text-align: center;
-                    font-size: 2.1rem;
-                    color: #fff;
-                    margin-bottom: 2rem;
-                    text-transform: uppercase;
-                }
-
-                ul {
-                    position: relative;
-                    left: 50%;
-                    transform: translate(-50%, 0);
-                    width: 70%;
-
-                    li {
-                        font-size: 2.3rem;
-                        color: #fff;
-                        margin-bottom: 2rem;
-                        list-style-type: disc;
-                    }
-                }
-
-                button {
-                    width: 60%;
-                    margin: 1rem auto;
-                    background: transparent;
-                    color: #fff;
-                    padding: .5rem;
-                    font-size: 1.7rem;
-                    font-weight: 700;
-                    text-transform: uppercase;
-                    border: 3px solid #fff;
-                    border-radius: 5px;
-                }
+            button {
+                margin-top: 1rem;
+                padding: .5rem;
+                font-size: 1.1rem;
+                width: 15rem;
+                text-transform: uppercase;
+                font-weight: 700;
+                border: 3px solid #000;
+                border-radius: 5px;
+                background: transparent;
+                cursor: pointer;
             }
         }
     }
@@ -118,79 +86,8 @@
     }
 }
 
-@media (max-width: 1170px) {
-    .home {
-
-        .home__card {  
-
-            .home__card-message-inner {
-                
-                .home__card-right {
-                    width: 45%;
-
-                    h1 {
-                        font-size: 2rem;
-                    }
-    
-                    ul {
-                        width: 100%;
-                        margin: 0 auto;
-    
-                        li {
-                            font-size: 1.8rem;
-                        }
-                    }
-
-                    button {
-                        font-size: 1.1rem;
-                        width: 70%;
-                    }
-                }
-            }
-        }
-    }
-}
-
 @media (max-width: 900px) {
     .home {
-        margin-top: 5rem;
-
-        .home__card {
-            height: 100%;
-    
-            .home__card-message-inner {
-                display: flex;
-                flex-direction: column;
-    
-                .home__card-left {
-                    width: 100%;
-                }
-                
-                .home__card-right {
-                    width: 100%;
-                    flex-direction: column;
-    
-                    h1 {
-                        font-size: 2rem;
-                    }
-    
-                    ul {
-                        width: 90%;
-                        margin: 0 auto;
-    
-                        li {
-                            font-size: 1.8rem;
-                        }
-                    }
-
-                    button {
-                        font-size: 1.1rem;
-                        width: 70%;
-                    }
-                }
-            }
-        }
-
         &__programs {
     
             .home__programs-content {
@@ -210,4 +107,17 @@
             }
         }
     }
+}
+
+@media (max-width: 500px) {
+    .home {
+    
+        .home__card {
+    
+            .home__card-cta {
+                background: rgba(255,255,255,0.7);
+                width: 90%;
+            }
+        }
+    }    
 }

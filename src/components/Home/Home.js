@@ -9,22 +9,10 @@ const Home = () => {
     return (
         <div className="home">
             <div className="home__card">
-                <div className="home__card-message-inner">
-                    <div className="home__card-left">
-                        <div className="home__card-image">
-                            <img src={kettleBellClub} alt="Kettlebell Club" />
-                        </div>
-                    </div>
-                    <div className="home__card-right">
-                        <h1>Strength, Mobility and Stability</h1>
-                        <ul>
-                            <li>Remote / In Person training</li>
-                            <li>Coaching</li>
-                            <li>Weekly Fitnees Programs</li>
-                            <li>Lifestyle Change</li>
-                        </ul>
-                        <button>Philosophy</button>
-                    </div>
+                <div className="home__card-cta">
+                    <h2>Strength & Mobility</h2>
+                    <p>Regardless of your fitness level or experience, all are welcome. It’s about the individual’s journey, so you only have to live up to your own standards.</p>
+                    <button>What We Do</button>
                 </div>
             </div>
             {
