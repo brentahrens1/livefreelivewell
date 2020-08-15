@@ -1,27 +1,23 @@
 .testimonials {
-    width: 100%;
-    margin-top: 2.5rem;
+    width: 90%;
+    margin: 2.5rem auto;
     overflow: hidden;
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(6, minmax(150px, 1fr));
+    grid-template-rows: repeat(auto, auto);
+    grid-gap: 10px;
 
     &__content {
         position: relative;
-        height: 8rem;
-        margin-left: 1rem;
         padding: 1rem;
         border-radius: 5px;
-        background: #E0E0E0;
-
-        &:hover {
-            transform: scale(1.1);
-        }
+        border: 1px solid #000;
 
         p {
             margin-bottom: 1rem;
         }
 
-        h2 {
+        h3 {
             position: absolute;
             bottom: .5rem;
         }

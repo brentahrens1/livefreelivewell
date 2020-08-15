@@ -2,6 +2,7 @@ import React from 'react'
 import '../../sass/_testimonials.scss'
 
 import { testimonials } from '../../const/testimonials'
+
 const Testimonials = () => {
     return (
         <div className="testimonials">
