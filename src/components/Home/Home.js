@@ -1,8 +1,6 @@
 import React from 'react'
 import '../../sass/_home.scss'
 
-import Testimonials from '../Testimonials/Testimonials'
-
 import { programs } from '../../const/programs'
  
 const Home = () => {
@@ -29,7 +27,6 @@ const Home = () => {
                     </div>
                 )
             }
-            <Testimonials />
         </div>
     )
 }
