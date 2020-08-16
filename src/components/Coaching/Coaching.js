@@ -24,7 +24,7 @@ const Coaching = () => {
                 </div>
             </div>
             <div className="program__info">
-                <h1>Kettlebell Club</h1>
+                <h1>Coaching</h1>
                 <p>Weekly KB party where each individual is treated with respect and given the opportunity to imporve their life and rise to the occasion and level up.</p>
                 <p>Weekly KB party where each individual is treated with respect and given the opportunity to imporve their life and rise to the occasion and level up.</p>
                 <p>Weekly KB party where each individual is treated with respect and given the opportunity to imporve their life and rise to.</p>
