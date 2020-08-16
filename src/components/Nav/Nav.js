@@ -12,7 +12,7 @@ const Nav = () => {
     return (
         <div className="nav">
             <div className="nav__logo">
-                <img src={navLogo} alt="livefreelivewell" />
+                <Link to="/"><img src={navLogo} alt="livefreelivewell" /></Link>
             </div>
             <ul className="nav__list">
                 <li className="nav__list-item"><a href="#">Programs</a>
@@ -22,7 +22,7 @@ const Nav = () => {
                         <li className="nav__dropdown-link"><a href="#">Coaching</a></li>
                     </ul>
                 </li>
-                <Link to="/about"><li className="nav__list-item">About</li></Link>
+                <li className="nav__list-item"><Link to="/about">About</Link></li>
                 <li className="nav__list-item"><a href="#">Contact</a></li>
             </ul>
             <div className="hamburger" onClick={() => setIsOpen(!isOpen)}>
@@ -49,7 +49,7 @@ const Nav = () => {
                             <li className="overlay__dropdown-link" onClick={() => setIsOpen(false)}><a href="#">Coaching</a></li>
                         </ul>
                     </li>
-                    <li className="overlay__list-item" onClick={() => setIsOpen(false)}><a href="#">About</a></li>
+                    <li className="overlay__list-item" onClick={() => setIsOpen(false)}><Link to="/about">About</Link></li>
                     <li className="overlay__list-item" onClick={() => setIsOpen(false)}><a href="#">Contact</a></li>
                 </ul>
             </div>

@@ -12,11 +12,12 @@ const Testimonials = () => {
         count = (count + randomNumber) % testimonials.length
         let newTestimony = testimonials[count]
         testimonial.innerHTML = `<p>"${newTestimony.body}"<p>
-                                 <h1>— ${newTestimony.name}</h1>`
+                                 <h3>— ${newTestimony.name}</h3>`
     }, 4000)
 
     return (
         <div className="testimonials">
+            <h1>Testomonials</h1>
             <div className="testimonials__content">   
             </div>
         </div>
