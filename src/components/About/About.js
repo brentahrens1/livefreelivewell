@@ -30,8 +30,20 @@ const About = () => {
             <div className="about__background">
                 <h2>Background</h2>
                 <div className="about__background-body">
-                    <p>Regardless of your fitness level or experience, all are welcome. It’s about the individual’s journey, so you only have to live up to your own standards. Regardless of your fitness level or experience, all are welcome. It’s about the individual’s journey, so you only have to live up to your own standards. Regardless of your fitness level or experience, all are welcome. It’s about the individual’s journey, so you only have to live up to your own standards.</p>
-                    <p>Regardless of your fitness level or experience, all are welcome. It’s about the individual’s journey, so you only have to live up to your own standards. Regardless of your fitness level or experience, all are welcome. It’s about the individual’s journey, so you only have to live up to your own standards. Regardless of your fitness level or experience, all are welcome. It’s about the individual’s journey, so you only have to live up to your own standards.</p>
+                    <div className="about__background-image">
+                        <img src={aboutOne} />
+                    </div>
+                    <div className="about__background-blurb">
+                        <h4>The journey</h4>
+                        <p>Regardless of your fitness level or experience, all are welcome. It’s about the individual’s journey, so you only have to live up to your own standards. Regardless of your fitness level or experience, all are welcome. It’s about the individual’s journey, so you only have to live up to your own standards. Regardless of your fitness level or experience, all are welcome. It’s about the individual’s journey, so you only have to live up to your own standards.</p>
+                    </div>
+                    <div className="about__background-blurb">
+                        <h4>Experience</h4>
+                        <p>Regardless of your fitness level or experience, all are welcome. It’s about the individual’s journey, so you only have to live up to your own standards. Regardless of your fitness level or experience, all are welcome. It’s about the individual’s journey, so you only have to live up to your own standards. Regardless of your fitness level or experience, all are welcome. It’s about the individual’s journey, so you only have to live up to your own standards.</p>
+                    </div>
+                    <div className="about__background-image image-two">
+                        <img src={aboutThree} />
+                    </div>
                 </div>
             </div>
             <div className="about__certifications">

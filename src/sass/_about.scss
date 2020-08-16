@@ -8,8 +8,13 @@
 .about {
     margin-top: 10rem;
 
+    p, li {
+        font-size: 1.4rem;
+    }
+
     &__intro {
         width: 85%;
+        height: 100%;
         margin: 0 auto;
         margin-bottom: 2rem;
         @include grid;
@@ -34,7 +39,7 @@
     &__philosophy {
         position: relative;
         width: 100%;
-        height: 50vh;
+        height: 100%;
         background: #2F2F2F;
         padding: 4rem;
         color: #fff;
@@ -54,7 +59,7 @@
     &__background {
         position: relative;
         width: 100%;
-        height: 50vh;
+        height: 100%;
         background: #fff;
         padding: 4rem;
         color: #000;
@@ -67,13 +72,41 @@
         .about__background-body {
             width: 85%;
             margin: 0 auto;
-            @include grid;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            grid-gap: 3rem;
+
+            .image-two {
+                margin-left: 3rem;
+            }
+
+            .about__background-image {
+                width: 80%;
+
+                &:nth-child(1) {
+                    align-self: center;
+                }
+
+                img {
+                    width: 100%;
+                }
+            }
+
+            .about__background-blurb {
+                align-self: center;
+
+                h4 {
+                    margin-bottom: 1rem;
+                }
+            }
+
         }
     }
 
     &__certifications {
         width: 100%;
-        height: 50vh;
+        height: 100%;
         background: #161616;
         padding: 4rem;
         color: #fff;
@@ -97,5 +130,47 @@
             @include grid;
         }
     }
+}
 
+@media (max-width: 800px) {
+    @mixin grid-mobile {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+        grid-gap: 20px;
+    }
+    
+    .about {
+        margin-top: 10rem;
+    
+        &__intro {
+            @include grid-mobile;
+        }
+    
+        &__philosophy {
+    
+            .about__philosophy-body {
+                @include grid-mobile;
+            }
+        }
+    
+        &__background {
+    
+            .about__background-body {
+                grid-template-columns: repeat(1, 1fr);
+                grid-template-rows: repeat(2, 1fr);
+    
+                .about__background-image {
+                    display: none;
+                }
+            }
+        }
+    
+        &__certifications {
+    
+            .about__certifications__body {
+                @include grid-mobile;
+            }
+        }
+    }
 }
