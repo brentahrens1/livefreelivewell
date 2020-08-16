@@ -1,0 +1,69 @@
+.program {
+    margin-top: 6rem;
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, fr);
+    grid-gap: 20px;
+
+    &__gallery {
+        display: grid;
+        grid-template-areas: 'top top top top'
+                             'mid mid mid2 mid2'
+                             'bot bot bot bot';
+        grid-gap: 10px;
+
+        .program__gallery-image {
+            width: 100%;
+            img {
+                width: 100%;
+            }
+        }
+
+        .one {
+            grid-area: top;
+        }
+
+        .two {
+            grid-area: mid;
+        }
+
+        .three {
+            grid-area: mid2;
+        }
+
+        .four {
+            grid-area: bot;
+        }
+    }
+
+    &__info {
+        h1, h3, li, p {
+            margin-bottom: 1rem;
+        }
+
+        p {
+            font-size: 1.5rem;
+        }
+
+        ul {
+            li {
+                list-style-type: disc;
+                font-size: 1.2rem;
+            }
+        }
+
+        button {
+            margin-top: 1rem;
+            padding: .5rem;
+            font-size: 1.1rem;
+            width: 15rem;
+            text-transform: uppercase;
+            font-weight: 700;
+            border: 2px solid #000;
+            border-radius: 5px;
+            background: transparent;
+            cursor: pointer;
+        }
+    }
+}
