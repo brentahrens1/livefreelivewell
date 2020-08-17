@@ -12,7 +12,7 @@ const About = () => {
         <div className="about">
             <div className="about__intro">
                 <div>
-                    <h2>The Motto</h2>
+                    <h1>The Motto</h1>
                     <p>Regardless of your fitness level or experience, all are welcome. It’s about the individual’s journey, so you only have to live up to your own standards.</p>
                 </div>
                 <div className="about__intro-image">
@@ -20,7 +20,7 @@ const About = () => {
                 </div>
             </div>
             <div className="about__philosophy">
-                <h2>Our Philosophy</h2>
+                <h1>Our Philosophy</h1>
                 <div className="about__philosophy-body">
                     <p>Regardless of your fitness level or experience, all are welcome. It’s about the individual’s journey, so you only have to live up to your own standards.</p>
                     <p>Regardless of your fitness level or experience, all are welcome. It’s about the individual’s journey, so you only have to live up to your own standards.</p>
@@ -28,7 +28,7 @@ const About = () => {
                 </div>
             </div>
             <div className="about__background">
-                <h2>Background</h2>
+                <h1>Background</h1>
                 <div className="about__background-body">
                     <div className="about__background-image">
                         <img src={aboutOne} />
@@ -47,7 +47,7 @@ const About = () => {
                 </div>
             </div>
             <div className="about__certifications">
-                <h2>Certifications</h2>
+                <h1>Certifications</h1>
                 <div className="about__certifications__body">
                     <ul>
                         <li>* kettlebells RKC and DKG</li>

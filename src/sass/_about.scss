@@ -12,6 +12,15 @@
         font-size: 1.4rem;
     }
 
+    h1 {
+        margin-bottom: 1rem;
+        text-align: center;
+    }
+
+    h4 { 
+        font-size: 1.2rem;
+    }
+
     &__intro {
         width: 85%;
         height: 100%;
@@ -19,8 +28,8 @@
         margin-bottom: 2rem;
         @include grid;
 
-        h2 {
-            margin-bottom: 1rem;
+        h1 {
+            text-align: left;
         }
 
         p {
@@ -44,11 +53,6 @@
         padding: 4rem;
         color: #fff;
 
-        h2 {
-            text-align: center;
-            margin-bottom: 1.5rem;
-        }
-
         .about__philosophy-body {
             width: 85%;
             margin: 0 auto;
@@ -63,11 +67,6 @@
         background: #fff;
         padding: 4rem;
         color: #000;
-
-        h2 {
-            text-align: center;
-            margin-bottom: 2rem;
-        }
 
         .about__background-body {
             width: 85%;
@@ -110,11 +109,6 @@
         background: #161616;
         padding: 4rem;
         color: #fff;
-
-        h2 {
-            text-align: center;
-            margin-bottom: 2rem;
-        }
 
         ul {
             margin: 0 auto;
