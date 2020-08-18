@@ -1,19 +1,19 @@
 import React, {useState} from 'react'
 import '../../sass/_contact.scss'
 
-import axios from 'axios'
-
-
 const Contact = () => {
     const [email,setEmail] = useState('')
     const [firstName,setfirstName] = useState('')
     const [lastName,setLastName] = useState('')
-    const [mailSent, setMailSent] = useState(false)
-    const [error, setError] = useState(null)
+    const [message, setMessage] = useState('')
+
+    async function handleSubmit(e) {
+        e.preventDefault()
+    }
 
     return (
         <div className="contact">
-            <form>
+            <form className="contact__form" id="contactform" onSubmit={handleSubmit}>
                 <label>First Name</label>
                 <input type="text" id="fname" placeholder="First Name" value={firstName} onChange={e => setfirstName(e.target.value)} />
                 <label>Last Name</label>
@@ -21,14 +21,11 @@ const Contact = () => {
                 <label>Email</label>
                 <input type="email" id="email" placeholder="Your Email" 
                     value={email}
-                    onChange={ e => setEmail(e.target.value)}
+                    onChange={e => setEmail(e.target.value)}
                     />
-                <input type="submit" onClick={e => handleFormSubmit(e)} value="Submit"/>
-                <div>
-                    {mailSent &&
-                        <div>Thank you for contcting us.</div>
-                    }
-                </div>
+                <label>Message</label>
+                <input type="textarea" name="message" form="contactform" rows="10" cols="30" value={message} onChange={e => setMessage(e.target.value)} />
+                <input className="contact__submit-btn" type="submit" value="Submit"/>
             </form>
         </div>
     )
