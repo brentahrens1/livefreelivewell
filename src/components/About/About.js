@@ -1,7 +1,7 @@
 import React from 'react'
 import '../../sass/_about.scss'
 
-import RodneyProfile from '../../assets/images/rodney-kettlebells.jpg'
+import RodneyProfile from '../../assets/images/Profile Pic-min.jpg'
 import aboutOne from '../../assets/images/about/about1.JPG'
 import aboutTwo from '../../assets/images/about/about2.JPG'
 import aboutThree from '../../assets/images/about/about3.jpg'

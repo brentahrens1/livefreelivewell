@@ -8,8 +8,10 @@ const Testimonials = () => {
 
     setInterval(() => {
         let testimonial = document.querySelector(".testimonials__content")
-        let randomNumber = Math.floor(Math.random() * 11)
-        count = (count + randomNumber) % testimonials.length
+        count++
+        if (count === testimonials.length) {
+            count = 0
+        }
         let newTestimony = testimonials[count]
         testimonial.innerHTML = `<p>"${newTestimony.body}"<p>
                                  <h3>— ${newTestimony.name}</h3>`
