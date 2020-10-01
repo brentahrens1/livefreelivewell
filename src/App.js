@@ -11,7 +11,6 @@ import Training from './components/Training/Training'
 import KettlebellClub from './components/KettlebellClub/KettlebellClub'
 import Contact from './components/Contact/Contact'
 import Testimonials from './components/Testimonials/Testimonials'
-import Payments from './components/Payments/Payments';
 import Footer from './components/Footer/Footer'
 
 console.log(process.env.REACT_APP_LIVE_FREE_LIVE_WELL)
@@ -28,7 +27,6 @@ function App() {
           <Route path="/training" exact component={Training} />
           <Route path="/kettlebell-club" exact component={KettlebellClub} />
           <Route path="/contact" exact component={Contact} />
-          <Route path="/payments" exact component={Payments} />
         </Switch>
       </div>
       <div id="footer">

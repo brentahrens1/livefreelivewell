@@ -33,7 +33,11 @@
         }
 
         p {
-            font-size: 2.5rem;
+            font-size: 1.5rem;
+        }
+
+        p:not(:last-child) {
+            margin-bottom: 1rem;
         }
 
         .about__intro-image {
@@ -71,6 +75,7 @@
         .about__background-body {
             width: 85%;
             margin: 0 auto;
+            margin-top: 4rem;
             display: grid;
             grid-template-columns: repeat(2, 1fr);
             grid-template-rows: repeat(2, 1fr);
@@ -82,10 +87,7 @@
 
             .about__background-image {
                 width: 80%;
-
-                &:nth-child(1) {
-                    align-self: center;
-                }
+                align-self: start;
 
                 img {
                     width: 100%;
@@ -93,7 +95,7 @@
             }
 
             .about__background-blurb {
-                align-self: center;
+                align-self: start;
 
                 h4 {
                     margin-bottom: 1rem;
@@ -139,6 +141,18 @@
     
         &__intro {
             @include grid-mobile;
+
+            .about__intro-image {
+                order: 1;
+            }
+
+            .about__intro-text {
+                order: 2;
+
+                p {
+                    font-size: 1.5rem;
+                }
+            }
         }
     
         &__philosophy {

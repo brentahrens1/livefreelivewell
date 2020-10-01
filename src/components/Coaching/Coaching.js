@@ -1,10 +1,8 @@
 import React from 'react'
 import '../../sass/_programs.scss'
 
-import picOne from '../../assets/images/programs/training.jpg'
-import picTwo from '../../assets/images/programs/kettlebell.jpg'
-import picThree from '../../assets/images/programs/bench-press-bar.jpg'
-import picFour from '../../assets/images/programs/bench-press-bar.jpg'
+import picOne from '../../assets/images/training-min.png'
+import picTwo from '../../assets/images/coach-min.png'
 
 const Coaching = () => {
     return (
@@ -15,12 +13,6 @@ const Coaching = () => {
                 </div>
                 <div className="program__gallery-image two">
                     <img src={picTwo} />
-                </div>
-                <div className="program__gallery-image three">
-                    <img src={picThree} />
-                </div>
-                <div className="program__gallery-image four">
-                    <img src={picOne} />
                 </div>
             </div>
             <div className="program__info">

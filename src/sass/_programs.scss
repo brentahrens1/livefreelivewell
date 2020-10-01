@@ -9,8 +9,7 @@
     &__gallery {
         display: grid;
         grid-template-areas: 'top top top top'
-                             'mid mid mid2 mid2'
-                             'bot bot bot bot';
+                             'mid mid mid mid';
         grid-gap: 10px;
 
         .program__gallery-image {
