@@ -14,7 +14,7 @@ const Testimonials = () => {
         }
         let newTestimony = testimonials[count]
         testimonial.innerHTML = `<p>"${newTestimony.body}"<p>
-                                 <h3>— ${newTestimony.name}</h3>`
+                                 <p>— ${newTestimony.name}</p>`
     }, 4000)
 
     return (

@@ -1,8 +1,9 @@
 import React from 'react'
 import '../../sass/_programs.scss'
 
-import picOne from '../../assets/images/kettlebelll-club-min.png'
-import picTwo from '../../assets/images/snatch-min.png'
+import picOne from '../../assets/images/programs/kettlebelll-club-min.png'
+import picTwo from '../../assets/images/programs/snatch-min.png'
+import picThree from '../../assets/images/programs/mid-swing-min.png'
 
 const KettlebellClub = () => {
     return (
@@ -13,6 +14,9 @@ const KettlebellClub = () => {
                 </div>
                 <div className="program__gallery-image two">
                     <img src={picTwo} />
+                </div>
+                <div className="program__gallery-image three">
+                    <img src={picThree} />
                 </div>
             </div>
             <div className="program__info">

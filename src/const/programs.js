@@ -1,6 +1,6 @@
-import kettlbells from '../assets/images/kettlebelll-club-min.png'
-import coaching from '../assets/images/coaching-min.png'
-import training from '../assets/images/training-min.png'
+import kettlbells from '../assets/images/programs/kettlebelll-club-min.png'
+import coaching from '../assets/images/programs/coaching-min.png'
+import training from '../assets/images/programs/training-min.png'
 
 export const programs = [
     {
