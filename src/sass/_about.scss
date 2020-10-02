@@ -153,32 +153,40 @@
                 order: 2;
 
                 p {
-                    font-size: 1.5rem;
+                    font-size: 1.3rem;
                 }
             }
         }
     
         &__philosophy {
-    
+            padding: 2rem .5rem;
             .about__philosophy-body {
                 @include grid-mobile;
             }
         }
     
         &__background {
-    
+            padding: 2rem .5rem;
+
             .about__background-body {
                 grid-template-columns: repeat(1, 1fr);
-                grid-template-rows: repeat(2, 1fr);
-    
+                grid-template-rows: repeat(1, 1fr);
+                margin-top: 0;
+
                 .about__background-image {
-                    display: none;
+                    width: 100%;
+                    justify-self: center;
+                }
+    
+                .image-two {
+                    margin-left: 0;
                 }
             }
         }
     
         &__certifications {
-    
+            padding: 2rem .5rem;
+
             .about__certifications__body {
                 @include grid-mobile;
             }
