@@ -1,7 +1,7 @@
 import React from 'react'
 import '../../sass/_programs.scss'
 
-import picOne from '../../assets/images/programs/training-min.png'
+import picOne from '../../assets/images/programs/coaching-min.png'
 import picTwo from '../../assets/images/programs/coach-min.png'
 import picThree from '../../assets/images/programs/new-group-train-min.png'
 

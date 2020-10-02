@@ -50,7 +50,8 @@
     }
 
     &__philosophy {
-        position: relative;
+        position: sticky;
+        top: 5rem;
         width: 100%;
         height: 100%;
         background: #2F2F2F;
@@ -106,6 +107,8 @@
     }
 
     &__certifications {
+        position: sticky;
+        top: 6rem;
         width: 100%;
         height: 100%;
         background: #161616;
