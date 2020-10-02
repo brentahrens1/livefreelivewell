@@ -1,9 +1,14 @@
 .contact {
     margin: 0 auto;
-    margin-top: 6rem;
+    margin-top: 8rem;
     width: 80%;
     max-width: 800px;
     font-size: 1.2rem;
+
+    h1 {
+        text-align: center;
+        margin-bottom: 1rem;
+    }
 
     label, .contact__submit-btn {
         margin: 1rem auto;
@@ -13,6 +18,10 @@
         width: 80%;
         padding: 1rem;
         border: 1.3px solid #000;
+    }
+
+    textarea {
+        margin-bottom: 1rem;
     }
 
     input {
@@ -39,5 +48,9 @@
 @media (max-width: 700px) {
     .contact {
         width: 100%;
+
+        input, textarea {
+            width: 90%;
+        }
     }
 }

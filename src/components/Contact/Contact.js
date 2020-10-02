@@ -13,6 +13,7 @@ const Contact = () => {
 
     return (
         <div className="contact">
+            <h1>Set up your first session!</h1>
             <form className="contact__form" id="contactform" onSubmit={handleSubmit}>
                 <label>First Name</label>
                 <input type="text" id="fname" placeholder="First Name" value={firstName} onChange={e => setfirstName(e.target.value)} />
@@ -24,7 +25,7 @@ const Contact = () => {
                     onChange={e => setEmail(e.target.value)}
                     />
                 <label>Message</label>
-                <input type="textarea" name="message" form="contactform" rows="10" cols="30" value={message} onChange={e => setMessage(e.target.value)} />
+                <textarea name="message" form="contactform" rows="10" cols="60" value={message} onChange={e => setMessage(e.target.value)} />
                 <input className="contact__submit-btn" type="submit" value="Submit"/>
             </form>
         </div>

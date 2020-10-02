@@ -23,7 +23,7 @@ const Nav = () => {
                     </ul>
                 </li>
                 <li className="nav__list-item"><Link to="/about">About</Link></li>
-                <li className="nav__list-item"><a href="#">Contact</a></li>
+                <li className="nav__list-item"><Link to="/contact">Contact</Link></li>
             </ul>
             <div className="hamburger" onClick={() => setIsOpen(!isOpen)}>
                 <div className="hamburger__bar" />
@@ -50,7 +50,7 @@ const Nav = () => {
                         </ul>
                     </li>
                     <li className="overlay__list-item" onClick={() => setIsOpen(false)}><Link to="/about">About</Link></li>
-                    <li className="overlay__list-item" onClick={() => setIsOpen(false)}><a href="#">Contact</a></li>
+                    <li className="overlay__list-item" onClick={() => setIsOpen(false)}><Link to="/contact">Contact</Link></li>
                 </ul>
             </div>
         </div>
