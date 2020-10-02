@@ -22,9 +22,9 @@
     }
 
     &__intro {
-        width: 85%;
+        width: 100%;
         height: 100%;
-        margin: 0 auto;
+        padding: 4rem;
         margin-bottom: 2rem;
         @include grid;
 
@@ -41,7 +41,8 @@
         }
 
         .about__intro-image {
-            width: 100%;
+            width: 80%;
+            justify-self: center;
 
             img {
                 width: 100%;
@@ -81,6 +82,7 @@
             grid-template-columns: repeat(2, 1fr);
             grid-template-rows: repeat(2, 1fr);
             grid-gap: 3rem;
+            grid-row-gap: 5rem;
 
             .image-two {
                 margin-left: 3rem;
@@ -144,9 +146,11 @@
     
         &__intro {
             @include grid-mobile;
+            padding: 2rem;
 
             .about__intro-image {
                 order: 1;
+                width: 100%;
             }
 
             .about__intro-text {
