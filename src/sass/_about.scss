@@ -142,11 +142,12 @@
     }
     
     .about {
-        margin-top: 10rem;
+        margin-top: 6.5rem;
     
         &__intro {
             @include grid-mobile;
             padding: 2rem;
+            padding-top: 0;
 
             .about__intro-image {
                 order: 1;
