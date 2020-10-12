@@ -5,6 +5,8 @@ import picOne from '../../assets/images/programs/coaching-min.png'
 import picTwo from '../../assets/images/programs/coach-min.png'
 import picThree from '../../assets/images/programs/new-group-train-min.png'
 
+import ProgramCalculator from '../ProgramCalculator/ProgramCalculator'
+
 const Coaching = () => {
     return (
         <div className="program">
@@ -33,6 +35,7 @@ const Coaching = () => {
                     <li>Be a better person</li>
                 </ul>
                 <button>Join The Club</button>
+                <ProgramCalculator />
             </div>
         </div>
     )

@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import '../../sass/_program-calculator.scss'
 
 const ProgramCalculator = () => {
+    const [ mainClick, setMainClick ] = useState(false)
     const [ total, setTotal ] = useState(0)
     const [ kbClicked, kbSetClicked ] = useState(true)
     const [ remoteClicked, remoteSetClicked ] = useState(true)
@@ -34,14 +35,16 @@ const ProgramCalculator = () => {
 
     return (
         <div className="program-calculator">
-            <h1>Program Calculator</h1>
-            <p>All prices listed below are on a monthly basis</p>
-            <h3>Let's do the math!</h3>
-            <div className="program-calculator__btns">
-                <button className={`${remoteClicked ? '' : 'active'}`} onClick={remote}>Remote Training</button>
-                <button className={`${kbClicked ? '' : 'active'}`} onClick={kbClub}>Kettlebell Club</button>
-                <button className={`${virtualClicked ? '' : 'active'}`} onClick={virtual}>Virtual Training</button>
-                <h1>${total}</h1>
+            <h2 onClick={() => setMainClick(!mainClick)} className={`title ${mainClick ? "active" : ''}`}>Program Calculator</h2>
+            <div className={`${mainClick ? "calc-container-visible" : "calc-container-hidden"}`}>
+                <p>All prices listed below are on a monthly basis</p>
+                <h3>Let's do the math!</h3>
+                <div className="program-calculator__btns">
+                    <button className={`${remoteClicked ? '' : 'active'}`} onClick={remote}>Remote Training</button>
+                    <button className={`${kbClicked ? '' : 'active'}`} onClick={kbClub}>Kettlebell Club</button>
+                    <button className={`${virtualClicked ? '' : 'active'}`} onClick={virtual}>Virtual Training</button>
+                    <h2>${total}</h2>
+                </div>
             </div>
         </div>
     )

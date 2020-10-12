@@ -5,6 +5,8 @@ import picOne from '../../assets/images/programs/training-min.png'
 import picTwo from '../../assets/images/programs/solo-class-min.png'
 import picThree from '../../assets/images/programs/solo-bell-min.png'
 
+import ProgramCalculator from '../ProgramCalculator/ProgramCalculator'
+
 const Training = () => {
     return (
         <div className="program">
@@ -33,6 +35,7 @@ const Training = () => {
                     <li>Be a better person</li>
                 </ul>
                 <button>Join The Club</button>
+                <ProgramCalculator />
             </div>
         </div>
     )
