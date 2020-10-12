@@ -1,0 +1,29 @@
+.program-calculator {
+
+    &__btns {
+        display: flex;
+        flex-direction: column;
+        width: 17rem;
+        position: relative;
+
+        button {
+            margin-bottom: .3rem;
+            padding: .5rem;
+            font-size: 1.2rem;
+            background: transparent;
+            cursor: pointer;
+
+            &::after {
+                content: '+';
+                position: absolute;
+                right: .6rem;
+            }
+
+            &.active::after {
+                content: '-';
+                position: absolute;
+                right: .6rem;
+            }
+        }
+    }
+}

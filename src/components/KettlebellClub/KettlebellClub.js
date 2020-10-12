@@ -1,6 +1,8 @@
 import React from 'react'
 import '../../sass/_programs.scss'
 
+import ProgramCalculator from '../ProgramCalculator/ProgramCalculator'
+
 import picOne from '../../assets/images/programs/kettlebelll-club-min.png'
 import picTwo from '../../assets/images/programs/snatch-min.png'
 import picThree from '../../assets/images/programs/mid-swing-min.png'
@@ -34,6 +36,7 @@ const KettlebellClub = () => {
                 </ul>
                 <button>Join The Club</button>
             </div>
+            <ProgramCalculator />
         </div>
     )
 }
