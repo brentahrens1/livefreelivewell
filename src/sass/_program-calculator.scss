@@ -1,12 +1,21 @@
 .program-calculator {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    margin-top: 3rem;
+
+    h1, h3, p {
+        margin-bottom: .5rem;
+        text-align: left;
+    }
 
     &__btns {
         display: flex;
         flex-direction: column;
-        width: 17rem;
-        position: relative;
+        width: 20rem;
 
         button {
+            position: relative;
             margin-bottom: .3rem;
             padding: .5rem;
             font-size: 1.2rem;

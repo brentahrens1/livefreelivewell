@@ -35,8 +35,8 @@ const KettlebellClub = () => {
                     <li>Be a better person</li>
                 </ul>
                 <button>Join The Club</button>
+                <ProgramCalculator />
             </div>
-            <ProgramCalculator />
         </div>
     )
 }
