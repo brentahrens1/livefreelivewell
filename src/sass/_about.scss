@@ -37,7 +37,7 @@
         }
 
         p:not(:last-child) {
-            margin-bottom: 1rem;
+            margin-bottom: 5rem;
         }
 
         .about__intro-image {
@@ -60,9 +60,8 @@
         color: #fff;
 
         .about__philosophy-body {
-            width: 85%;
+            width: 55%;
             margin: 0 auto;
-            @include grid;
         }
     }
 
@@ -73,6 +72,11 @@
         background: #fff;
         padding: 4rem;
         color: #000;
+
+        .get-started {
+            width: 55%;
+            margin: 0 auto;
+        }
 
         .about__background-body {
             width: 85%;
@@ -99,6 +103,13 @@
 
             .about__background-blurb {
                 align-self: start;
+
+                ul {
+                    li {
+                        list-style-type: disc;
+                        margin-bottom: .5rem;
+                    }
+                }
 
                 h4 {
                     margin-bottom: 1rem;

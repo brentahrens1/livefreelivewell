@@ -12,9 +12,9 @@ const Home = () => {
         <div className="home">
             <div className="home__card">
                 <div className="home__card-cta">
-                    <h2>Strength & Mobility</h2>
-                    <p>Regardless of your fitness level or experience, all are welcome. It’s about the individual’s journey, so you only have to live up to your own standards.</p>
-                    <button><Link to="/about">Begin your journey</Link></button>
+                    <h2>Start your journey</h2>
+                    <p>Pick an available time and date to set up your first strategy session with Rodney. Take a look through our programs.</p>
+                    <button><Link to="/about">Schedule Session</Link></button>
                 </div>
             </div>
             {
