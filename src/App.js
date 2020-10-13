@@ -13,8 +13,6 @@ import Contact from './components/Contact/Contact'
 import Testimonials from './components/Testimonials/Testimonials'
 import Footer from './components/Footer/Footer'
 
-console.log(process.env.REACT_APP_LIVE_FREE_LIVE_WELL)
-
 function App() {
   return (
     <div className="App">
