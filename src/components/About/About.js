@@ -12,7 +12,7 @@ const About = () => {
                 <div className="about__intro-text">
                     <h1>About Me</h1>
                     <p className="about-first-p">In the last decade, I have worked in a variety of roles within the fitness industry., from personal trainer to fitness manager, leading my team to success. No matter the position, I never forget the focus on the client and their goals, whether it be weight loss, injury prevention or athletic development. I have dedicated myself to understanding my clients, their health, and their fitness goals. I believe in creating a solid foundation based on a continuous approach to long term health.</p>
-                    <h1>Why LIVEFREELIVEWELL</h1>
+                    <h1>Why LIVEFREELIVEWELL?</h1>
                     <p>The pandemic redefined how we focus on fitness. We were challenged to find alternate, effective options to reach our goals. At home training is more important now than ever. The need for an accessible training experience including self paced programs, individual and community challenges and a guided mastery of long term success propelled me to create a unique fitness experience with both virtual and in person programs based on your needs.</p>
                 </div>
                 <div className="about__intro-image">
@@ -31,7 +31,7 @@ const About = () => {
                         <img src={aboutOne} />
                     </div>
                     <div className="about__background-blurb">
-                        <h4>During The Strategy Session</h4>
+                        <h1>During The Strategy Session</h1>
                         <ul>
                             <li>Examine Short Term/Long Term Goals</li>
                             <li>Assess Movement Patterns</li>
@@ -39,7 +39,7 @@ const About = () => {
                         </ul>
                     </div>
                     <div className="about__background-blurb">
-                        <h4>When You Register For The Strategy Session</h4>
+                        <h1>When You Register For The Strategy Session</h1>
                         <ul>
                             <li>FREE 2 week Trial </li>
                             <li>Self-Paced Program With Metrics Tracking Analytics</li>
@@ -54,18 +54,15 @@ const About = () => {
                 </div>
             </div>
             <div className="about__certifications">
-                <h1>Certifications</h1>
+                <h1>Specializations</h1>
                 <div className="about__certifications__body">
                     <ul>
-                        <li>* kettlebells RKC and DKG</li>
-                        <li>* Pull up champion of the world</li>
-                        <li>* Did a couple sit ups once</li>
+                        <li>Certified Functional Strength Coach</li>
+                        <li>Kettlebell Instructor, Olympic</li>
                     </ul>
                     <ul>
-                        <li>* Ran a mile in middle school</li>
-                        <li>* Eat 7 meals a day</li>
-                        <li>* kettlebells</li>
-                        <li>* Steroids</li>
+                        <li>Weightlifting, Weight Loss Specialist</li>
+                        <li>Injury Prevention, Strength Training</li>
                     </ul>
                 </div>
             </div>

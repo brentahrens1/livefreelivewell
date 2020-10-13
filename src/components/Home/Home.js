@@ -14,7 +14,7 @@ const Home = () => {
                 <div className="home__card-cta">
                     <h2>Start your journey</h2>
                     <p>Pick an available time and date to set up your first strategy session with Rodney. Take a look through our programs.</p>
-                    <button><Link to="/about">Schedule Session</Link></button>
+                    <button><Link to="/contact">Schedule Session</Link></button>
                 </div>
             </div>
             {

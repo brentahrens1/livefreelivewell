@@ -6,6 +6,7 @@ const Contact = () => {
     const [firstName,setfirstName] = useState('')
     const [lastName,setLastName] = useState('')
     const [message, setMessage] = useState('')
+    const [program, setProgram] = useState('')
 
     async function handleSubmit(e) {
         e.preventDefault()
@@ -24,6 +25,12 @@ const Contact = () => {
                     value={email}
                     onChange={e => setEmail(e.target.value)}
                     />
+                    <label>Which program are you interested in?</label>
+                    <select className="programs" name="programs" value={program} onChange={e => setProgram(e.target.value)}>
+                        <option value="kettlebellclub">Kettlebell Club</option>
+                        <option value="remotetraining">Remote Training</option>
+                        <option value="virtualtraining">Virtual Training</option>
+                    </select>
                 <label>Message</label>
                 <textarea name="message" form="contactform" rows="10" cols="60" value={message} onChange={e => setMessage(e.target.value)} />
                 <input className="contact__submit-btn" type="submit" value="Submit"/>

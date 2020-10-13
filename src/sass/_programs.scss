@@ -1,18 +1,16 @@
 .program {
     margin-top: 6rem;
     padding: 2rem;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(1, fr);
-    grid-gap: 20px;
     height: 100%;
     width: 100%;
+    display: flex;
 
     &__gallery {
         display: grid;
         grid-template-areas: 'top top top top'
                              'mid mid mid2 mid2';
         grid-gap: 10px;
+        margin-right: 2rem;
 
         .program__gallery-image {
             width: 100%;

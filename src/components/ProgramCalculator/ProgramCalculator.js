@@ -38,7 +38,7 @@ const ProgramCalculator = () => {
             <h2 onClick={() => setMainClick(!mainClick)} className={`title ${mainClick ? "active" : ''}`}>Program Calculator</h2>
             <div className={`${mainClick ? "calc-container-visible" : "calc-container-hidden"}`}>
                 <p>All prices listed below are on a monthly basis</p>
-                <h3>Let's do the math!</h3>
+                <p>Let's do the math!</p>
                 <div className="program-calculator__btns">
                     <button className={`${remoteClicked ? '' : 'active'}`} onClick={remote}>Remote Training</button>
                     <button className={`${kbClicked ? '' : 'active'}`} onClick={kbClub}>Kettlebell Club</button>

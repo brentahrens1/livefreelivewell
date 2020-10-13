@@ -33,7 +33,7 @@
         }
 
         p {
-            font-size: 1.5rem;
+            font-size: 1.3rem;
         }
 
         p:not(:last-child) {
@@ -73,6 +73,10 @@
         padding: 4rem;
         color: #000;
 
+        h1 {
+            text-align: left;
+        }
+
         .get-started {
             width: 55%;
             margin: 0 auto;
@@ -109,10 +113,6 @@
                         list-style-type: disc;
                         margin-bottom: .5rem;
                     }
-                }
-
-                h4 {
-                    margin-bottom: 1rem;
                 }
             }
 
