@@ -67,6 +67,10 @@
 
 @media (max-width: 900px) {
     .program {
-        grid-template-columns: repeat(1, 1fr);
+        flex-direction: column;
+
+        &__gallery {
+            margin-bottom: 1rem;
+        }
     }
 }

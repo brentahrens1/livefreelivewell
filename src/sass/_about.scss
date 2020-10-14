@@ -175,8 +175,12 @@
         }
     
         &__philosophy {
-            padding: 2rem .5rem;
+            position: relative;
+            padding: 3rem .5rem;
+            top: 0;
+
             .about__philosophy-body {
+                width: 90%;
                 @include grid-mobile;
             }
         }
