@@ -167,12 +167,13 @@
 
             .overlay__list-item {
                 position: relative;
-                padding: 15px;
                 border-bottom: .2px solid #fff;
                 cursor: pointer;
     
                 a:link, a:visited {
                     color: #fff;
+                    display: block;
+                    padding: 15px;
                 }
 
                 .chevron {

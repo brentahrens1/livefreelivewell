@@ -155,7 +155,7 @@
     
         &__intro {
             @include grid-mobile;
-            padding: 2rem;
+            padding: 1rem;
             padding-top: 0;
 
             .about__intro-image {
@@ -174,19 +174,20 @@
     
         &__philosophy {
             position: relative;
-            padding: 3rem .5rem;
+            padding: 3rem 1.5rem;
             top: 0;
 
             .about__philosophy-body {
-                width: 90%;
+                width: 100%;
                 @include grid-mobile;
             }
         }
     
         &__background {
-            padding: 2rem .5rem;
+            padding: 2rem 1rem;
 
             .about__background-body {
+                width: 100%;
                 grid-template-columns: repeat(1, 1fr);
                 grid-template-rows: repeat(1, 1fr);
                 margin-top: 0;
@@ -199,11 +200,17 @@
                 .image-two {
                     margin-left: 0;
                 }
+
+                .about__background-blurb {
+                    justify-self: center;
+                    padding: 1rem;
+                }
             }
         }
     
         &__certifications {
-            padding: 2rem .5rem;
+            padding: 2rem 1rem;
+            margin: 0;
 
             .about__certifications__body {
                 @include grid-mobile;
