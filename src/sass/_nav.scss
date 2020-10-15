@@ -30,7 +30,11 @@
         .nav__list-item {
             position: relative;
             display: inline-block;
-            padding: 25px 20px;
+
+            a:link, a:visited {
+                padding: 25px 20px;
+                display: block;
+            }
 
             &:hover {
                 background: #0E538F;
@@ -61,10 +65,11 @@
 
         .nav__dropdown-link {
             margin: .5rem;
-            padding: 15px 15px;
 
             a:link, a:visited {
                 color: #fff;
+                padding: 15px 15px;
+                display: block;
             }
             
 

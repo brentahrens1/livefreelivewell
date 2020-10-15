@@ -10,7 +10,7 @@ import Coaching from './components/Coaching/Coaching'
 import Training from './components/Training/Training'
 import KettlebellClub from './components/KettlebellClub/KettlebellClub'
 import Contact from './components/Contact/Contact'
-import Testimonials from './components/Testimonials/Testimonials'
+import TestimonialsPage from './components/TestimonialsPage/TestimonialsPage'
 import Footer from './components/Footer/Footer'
 
 function App() {
@@ -25,10 +25,10 @@ function App() {
           <Route path="/training" exact component={Training} />
           <Route path="/kettlebell-club" exact component={KettlebellClub} />
           <Route path="/contact" exact component={Contact} />
+          <Route path="/testimonials" exact component={TestimonialsPage} />
         </Switch>
       </div>
       <div id="footer">
-        <Testimonials />
         <Footer />
       </div>
     </div>

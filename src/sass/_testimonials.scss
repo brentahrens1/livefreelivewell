@@ -1,32 +1,19 @@
 .testimonials {
-    width: 50%;
-    margin: 6.5rem auto;
-    margin-bottom: 4.5;
     text-align: center;
-    overflow: hidden;
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(1, 1fr);
-    grid-gap: 10px;
 
-    &__scroll {
-        display: flex;
-        flex-direction: column;
-        padding: 1rem;
+    h1 {
+        font-size: 1.1rem;
+        text-transform: uppercase;
+        font-weight: 700;
+        border-bottom: 1.8px solid #fff;
+        color: #fff;
+        background: transparent;
+        padding-bottom: .2rem;
+        cursor: pointer;
 
-        p {
-            margin-bottom: 1rem;
-            font-size: 1.3rem;
+        a:link, a:visited {
+            color: #fff;
         }
     }
-}
 
-@media (max-width: 700px) {
-    .testimonials {
-        width: 90%;
-    
-            p {
-                font-size: 1.2rem;
-            }
-    }
 }

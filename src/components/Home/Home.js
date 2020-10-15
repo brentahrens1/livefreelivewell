@@ -27,7 +27,7 @@ const Home = () => {
                             <div className="home__programs-content">
                                 <h1>{program.title}</h1>
                                 <p>{program.description}</p>
-                                <button>{program.buttonTxt}</button>
+                                <button>Learn More</button>
                             </div>
                         </div>
                     </Link>

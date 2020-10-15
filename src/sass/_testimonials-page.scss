@@ -1,0 +1,27 @@
+.testimonials-page {
+    margin-top: 8rem;
+    margin-bottom: 5rem;
+    width: 100%;
+
+    h1 {
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+
+    .page {
+        width: 50%;
+        margin: 0 auto;
+
+        p, h3 {
+            font-size: 1.3rem;
+        }
+
+        h3 {
+            margin-top: 1rem;
+        }
+    }
+
+    hr {
+        margin: 1rem auto;
+    }
+}

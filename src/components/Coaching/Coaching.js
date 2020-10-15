@@ -1,6 +1,8 @@
 import React from 'react'
 import '../../sass/_programs.scss'
 
+import { Link } from 'react-router-dom'
+
 import picOne from '../../assets/images/programs/coaching-min.png'
 import picTwo from '../../assets/images/programs/coach-min.png'
 import picThree from '../../assets/images/programs/new-group-train-min.png'
@@ -34,7 +36,7 @@ const Coaching = () => {
                     <li>Build muscle and conditioning</li>
                     <li>Be a better person</li>
                 </ul>
-                <button>Join The Club</button>
+                <button><Link to="/contact">Join The Club</Link></button>
                 <ProgramCalculator />
             </div>
         </div>
