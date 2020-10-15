@@ -7,7 +7,7 @@ const Testimonials = () => {
 
     return (
         <div className="testimonials">
-            <h1><Link to="/testimonials">Read Our Testimonials</Link></h1>
+            <h1><Link to="/testimonials">Client Stories</Link></h1>
         </div>
     )
 }

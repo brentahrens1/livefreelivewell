@@ -6,7 +6,7 @@ import { testimonials } from '../../const/testimonials'
 const TestimonialsPage = () => {
     return (
         <div className="testimonials-page">
-            <h1>Testimonials</h1>
+            <h1>Client Stories</h1>
             {
                 testimonials.map((testimonial, idx) => 
                     <div className="page">
