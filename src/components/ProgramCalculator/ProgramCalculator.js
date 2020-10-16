@@ -4,21 +4,16 @@ import '../../sass/_program-calculator.scss'
 const ProgramCalculator = () => {
     const [ mainClick, setMainClick ] = useState(false)
     const [ total, setTotal ] = useState(0)
-    const [ kbClicked, kbSetClicked ] = useState(true)
+    const [ kbClicked, kbSetClicked ] = useState(false)
     const [ remoteClicked, setRemoteClicked ] = useState(true)
     const [ background, setBackground ] = useState('')
 
-    const kbClub = () => {
+    const kbClub = (e) => {
         kbSetClicked(!kbClicked)
         if (total <= 0) {
             setTotal(0)
         }
-        kbClicked ? setTotal(total + 20) : setTotal(total - 20)
-    }
-
-    const remote = (e) => {
-        setRemoteClicked(!remoteClicked)
-        remoteClicked && e.target.id == 2 ? setTotal(total + 100) : setTotal(total - 100) 
+        kbClicked && e.target.id === "kettlebell" ? setTotal(total + 20) : setTotal(total - 20)
     }
 
     return (
@@ -33,7 +28,7 @@ const ProgramCalculator = () => {
                     <div className="days">
                         <button id="remote" onClick={e => {
                             setRemoteClicked(!remoteClicked)
-                            remoteClicked && e.target.id === 'remote' ? setTotal(total + 50) : setTotal(0)
+                            remoteClicked && e.target.id === 'remote' ? setTotal(total + 50) : setTotal(total - 50)
                         }}>1</button>
                         <button id="remote" onClick={e => {
                             setRemoteClicked(!remoteClicked)
@@ -60,7 +55,7 @@ const ProgramCalculator = () => {
                             remoteClicked && e.target.id === 'remote' ? setTotal(total + 350) : setTotal(0)
                         }}>7</button>
                     </div>
-                    <button className={`${kbClicked ? 'active' : ''}`} onClick={kbClub}>Kettlebell Club</button>
+                    <button id="kettlebell" className={`${kbClicked ? 'active' : ''}`} onClick={kbClub}>Kettlebell Club</button>
                     <h2>Virtual Training</h2>
                     <p>Days a week per month</p>
                     <div className="days">

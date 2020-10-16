@@ -35,7 +35,7 @@ const Training = () => {
                     <li>Live Feedback</li>
                 </ul>
                 <button><Link to="/contact">Join The Club</Link></button>
-                <ProgramCalculator />
+                {/* <ProgramCalculator /> */}
             </div>
         </div>
     )

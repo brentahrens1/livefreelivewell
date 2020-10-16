@@ -35,7 +35,7 @@ const KettlebellClub = () => {
                     <li>Saturday 9am PST & 10:30am PT</li>
                 </ul>
                 <button><Link to="contact">Join The Club</Link></button>
-                <ProgramCalculator />
+                {/* <ProgramCalculator /> */}
             </div>
         </div>
     )
