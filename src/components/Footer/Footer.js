@@ -1,7 +1,7 @@
 import React from 'react'
 import '../../sass/_footer.scss'
 
-import footLogo from '../../assets/images/logos/alt-blue.jpg'
+import footLogo from '../../assets/images/logos/white-blue.JPG'
 
 import Testimonials from '../Testimonials/Testimonials'
 
@@ -14,11 +14,10 @@ const Footer = () => {
                 </div>
                 <h1>#livefreelivewell</h1>
             </div>
-            <Testimonials />
             <div className="footer__social">
                 <ul>
-                    <li><a href="#">Instagram</a></li>
-                    <li><a href="#">True Coach</a></li>
+                    <li><Testimonials /></li>
+                    <li><a href="#">About</a></li>
                     <li><a href="#">Contact</a></li>
                 </ul>
             </div>

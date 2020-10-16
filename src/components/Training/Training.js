@@ -24,17 +24,15 @@ const Training = () => {
                 </div>
             </div>
             <div className="program__info">
-                <h1>Training</h1>
-                <p>Weekly KB party where each individual is treated with respect and given the opportunity to imporve their life and rise to the occasion and level up.</p>
-                <p>Weekly KB party where each individual is treated with respect and given the opportunity to imporve their life and rise to the occasion and level up.</p>
-                <p>Weekly KB party where each individual is treated with respect and given the opportunity to imporve their life and rise to.</p>
+                <h1>Personal Training | In Person or Virtual</h1>
 
-                <h3>$20 / mo</h3>
+                <h3>$60 / mo</h3>
                 <ul>
-                    <li>Weekly 60 minute class</li>
-                    <li>Develop professional skills</li>
-                    <li>Build muscle and conditioning</li>
-                    <li>Be a better person</li>
+                    <li>Program Specific To Your Goals</li>
+                    <li>Program Based On Available Equipment (virtual)</li>
+                    <li>Meet At Preferred Location (in-person)</li>
+                    <li>Program Tracking: Metrics & Pictures</li>
+                    <li>Live Feedback</li>
                 </ul>
                 <button><Link to="/contact">Join The Club</Link></button>
                 <ProgramCalculator />

@@ -51,6 +51,27 @@
             margin-top: 1rem;
         }
 
+        p {
+            margin: 0;
+        }
+
+        .days button {
+            width: 2rem;
+            margin-left: .1rem;
+
+            &.active {
+                background: #0E538F;
+                color: #fff;
+            }
+
+            &.active::after {
+                content: '';
+            }
+
+            &::after {
+                content: '';
+            }
+        }
         button {
             position: relative;
             margin-bottom: .3rem;

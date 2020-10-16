@@ -1,0 +1,49 @@
+.contact-form {
+   width: 60%;
+   max-width: 800px;
+   height: 100%;
+   display: flex;
+   flex-direction: column;
+   margin: 0 auto;
+   margin-top: 2rem;
+
+   p {
+       margin-bottom: 2rem;
+       font-size: 1.3rem;
+   }
+
+   input, label, textarea, select {
+       margin-bottom: 1rem;
+   }
+   
+   label {
+       text-transform: uppercase;
+   }
+
+   select {
+       width: 300px;
+   }
+
+   input, textarea, select {
+       padding: .5rem;
+       font-size: 1.2rem;
+   }
+
+   form {
+       width: 100%;
+   }
+
+   .btn {
+       background: #0E538F;
+       color: #fff;
+       text-transform: uppercase;
+       border: none;
+       cursor: pointer;
+   }
+}
+
+@media (max-width: 800px) {
+    .contact-form {
+        width: calc(100% - 2rem);
+    }
+}

@@ -9,7 +9,7 @@ const TestimonialsPage = () => {
             <h1>Client Stories</h1>
             {
                 testimonials.map((testimonial, idx) => 
-                    <div className="page">
+                    <div key={idx} className="page">
                         <p>"{testimonial.body}"</p>
                         <h3>- {testimonial.name}</h3>
                         <hr />

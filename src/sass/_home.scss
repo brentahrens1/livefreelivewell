@@ -11,6 +11,10 @@
         box-shadow: 0 1rem 2.5rem rgba(0,0,0,0.2);
         height: 100vh;
 
+        p {
+            text-align: center;
+        }
+
         .home__card-cta {
             background: rgba(255,255,255,0.7);
             width: 30rem;
@@ -34,7 +38,7 @@
                 margin-top: 1rem;
                 padding: .5rem;
                 font-size: 1.1rem;
-                width: 15rem;
+                width: 20rem;
                 text-transform: uppercase;
                 font-weight: 700;
                 border: 2px solid #000;
@@ -83,6 +87,18 @@
             display: flex;
             flex-direction: column;
             background: #0E538F;
+
+            ul {
+                margin-left: 1rem;
+                li {
+                    list-style-type: disc;
+                }
+            }
+
+            h4 {
+                margin-top: 1rem;
+                font-size: 1.3rem;
+            }
 
             h1, p {
                 color: #fff;

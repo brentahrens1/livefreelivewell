@@ -7,6 +7,7 @@
 
 .about {
     margin-top: 6rem;
+    margin-bottom: 0rem;
 
     p, li {
         font-size: 1.4rem;
@@ -55,6 +56,11 @@
         background: #2F2F2F;
         padding: 4rem;
         color: #fff;
+        text-align: center;
+
+        p {
+            margin-bottom: 1rem;
+        }
 
         .about__philosophy-body {
             width: 55%;
@@ -80,12 +86,11 @@
         }
 
         .about__background-body {
-            width: 85%;
+            width: 100%;
             margin: 0 auto;
-            margin-top: 4rem;
             display: grid;
             grid-template-columns: repeat(2, 1fr);
-            grid-template-rows: repeat(2, 1fr);
+            grid-template-rows: repeat(1, 1fr);
             grid-gap: 3rem;
             grid-row-gap: 5rem;
 
@@ -94,7 +99,7 @@
             }
 
             .about__background-image {
-                width: 80%;
+                width: 100%;
                 align-self: start;
 
                 img {
@@ -106,6 +111,8 @@
                 align-self: start;
 
                 ul {
+                    margin-bottom: 3rem;
+
                     li {
                         list-style-type: disc;
                         margin-bottom: .5rem;
@@ -117,11 +124,9 @@
     }
 
     &__certifications {
-        position: sticky;
-        top: 6rem;
         width: 100%;
         height: 100%;
-        background: #161616;
+        background:  #2F2F2F;
         padding: 4rem;
         color: #fff;
 

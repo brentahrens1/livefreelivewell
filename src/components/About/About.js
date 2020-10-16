@@ -20,9 +20,14 @@ const About = () => {
                 </div>
             </div>
             <div className="about__philosophy">
-                <h1>Getting Started</h1>
                 <div className="about__philosophy-body">
-                    <p className="get-started">When you register for the Strategy Session, you are automatically eligible for the FREE 2 week self paced program through the TrueCoach App, as well as the Wednesday virtual Live Workout + Q & A. You will get an exclusive preview of the programs prior to deciding which best fits your goals. During the Strategy Session we will go over your short term and long term goals. Assess your movement patterns and go over the operational details necessary to effectively begin your journey.</p>
+                    <p>Included with purchase of any program</p>
+                    <p>Live Workout + Q&A</p>
+                    <p>Minimal to no equipment required</p>
+                    <p>train with virtual community</p>
+                    <p>focus on functional strength, stability & mobility</p>
+                    <p>45 minute training followed by 20 minute discussion on General health, Fitness, Nutrition Habits & Much More</p>
+                    <p>Every Wednesday 5pm PT</p>
                 </div>
             </div>
             <div className="about__background">
@@ -37,8 +42,6 @@ const About = () => {
                             <li>Assess Movement Patterns</li>
                             <li>Formulate A Plan For Your Fitness Journey</li>
                         </ul>
-                    </div>
-                    <div className="about__background-blurb">
                         <h1>When You Register For The Strategy Session</h1>
                         <ul>
                             <li>FREE 2 week Trial </li>
@@ -48,9 +51,6 @@ const About = () => {
                             <li>Exclusive Preview Of Programs To Help You decide best fit</li>
                         </ul>
                     </div>
-                    <div className="about__background-image image-two">
-                        <img src={aboutTwo} />
-                    </div>
                 </div>
             </div>
             <div className="about__certifications">
@@ -58,10 +58,10 @@ const About = () => {
                 <div className="about__certifications__body">
                     <ul>
                         <li>Certified Functional Strength Coach</li>
-                        <li>Kettlebell Instructor, Olympic</li>
+                        <li>Kettlebell Instructor, Olympic Weightlifting</li>
                     </ul>
                     <ul>
-                        <li>Weightlifting, Weight Loss Specialist</li>
+                        <li>Weight Loss Specialist</li>
                         <li>Injury Prevention, Strength Training</li>
                     </ul>
                 </div>

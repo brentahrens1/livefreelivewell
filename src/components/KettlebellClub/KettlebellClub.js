@@ -25,16 +25,14 @@ const KettlebellClub = () => {
             </div>
             <div className="program__info">
                 <h1>Kettlebell Club</h1>
-                <p>Weekly KB party where each individual is treated with respect and given the opportunity to imporve their life and rise to the occasion and level up.</p>
-                <p>Weekly KB party where each individual is treated with respect and given the opportunity to imporve their life and rise to the occasion and level up.</p>
-                <p>Weekly KB party where each individual is treated with respect and given the opportunity to imporve their life and rise to.</p>
 
                 <h3>$20 / mo</h3>
                 <ul>
-                    <li>Weekly 60 minute class</li>
-                    <li>Develop professional skills</li>
-                    <li>Build muscle and conditioning</li>
-                    <li>Be a better person</li>
+                    <li>Learn And Refine Kettlebell-Specific Skills</li>
+                    <li>Structured Approach To Prevent Risk Of Injury</li>
+                    <li>Train With Virtual Community</li>
+                    <li>Program Tracking: Metrics & Pictures</li>
+                    <li>Saturday 9am PST & 10:30am PT</li>
                 </ul>
                 <button><Link to="contact">Join The Club</Link></button>
                 <ProgramCalculator />

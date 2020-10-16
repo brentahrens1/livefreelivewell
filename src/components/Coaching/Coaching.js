@@ -14,27 +14,25 @@ const Coaching = () => {
         <div className="program">
             <div className="program__gallery">
                 <div className="program__gallery-image one">
-                    <img src={picOne} />
+                    <img src={picOne} alt="LIVEFREELIVEWELL | REMOTE COACHING"/>
                 </div>
                 <div className="program__gallery-image two">
-                    <img src={picTwo} />
+                    <img src={picTwo} alt="LIVEFREELIVEWELL | REMOTE COACHING 2"/>
                 </div>
                 <div className="program__gallery-image three">
-                    <img src={picThree} />
+                    <img src={picThree} alt="LIVEFREELIVEWELL | REMOTE COACHING 3" />
                 </div>
             </div>
             <div className="program__info">
-                <h1>Coaching</h1>
-                <p>Weekly KB party where each individual is treated with respect and given the opportunity to imporve their life and rise to the occasion and level up.</p>
-                <p>Weekly KB party where each individual is treated with respect and given the opportunity to imporve their life and rise to the occasion and level up.</p>
-                <p>Weekly KB party where each individual is treated with respect and given the opportunity to imporve their life and rise to.</p>
+                <h1>Remote Coaching</h1>
 
-                <h3>$20 / mo</h3>
+                <h3>$50 / mo</h3>
                 <ul>
-                    <li>Weekly 60 minute class</li>
-                    <li>Develop professional skills</li>
-                    <li>Build muscle and conditioning</li>
-                    <li>Be a better person</li>
+                    <li>Train Anytime Anywhere</li>
+                    <li>Video Reference for Each Movement</li>
+                    <li>Progress Tracking: Metrics & Pictures</li>
+                    <li>Program Based On Available Equipment</li>
+                    <li>Personalized Feedback</li>
                 </ul>
                 <button><Link to="/contact">Join The Club</Link></button>
                 <ProgramCalculator />

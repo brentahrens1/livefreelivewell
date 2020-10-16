@@ -12,9 +12,9 @@ const Home = () => {
         <div className="home">
             <div className="home__card">
                 <div className="home__card-cta">
-                    <h2>Start your journey</h2>
-                    <p>Pick an available time and date to set up your first strategy session with Rodney.</p>
-                    <button><Link to="/contact">Schedule Session</Link></button>
+                    <h2>Start your fitness journey</h2>
+                    <p>Begin with a free 2 week trial</p>
+                    <button><Link to="/about">Learn More</Link></button>
                 </div>
             </div>
             {
@@ -27,7 +27,7 @@ const Home = () => {
                             <div className="home__programs-content">
                                 <h1>{program.title}</h1>
                                 <p>{program.description}</p>
-                                <button>Learn More</button>
+                                <button>{program.buttonTxt}</button>
                             </div>
                         </div>
                     </Link>
