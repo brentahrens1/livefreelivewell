@@ -59,10 +59,15 @@
             width: 2rem;
             margin-left: .1rem;
 
+            &.reset {
+                width: 5rem;
+            }
+            
             &.active {
                 background: #0E538F;
                 color: #fff;
             }
+
 
             &.active::after {
                 content: '';
@@ -88,6 +93,11 @@
                 content: '+';
                 position: absolute;
                 right: .6rem;
+            }
+
+            &.active {
+                background: #0E538F;
+                color: #fff;
             }
 
             &.active::after {
