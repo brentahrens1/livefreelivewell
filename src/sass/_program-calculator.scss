@@ -47,6 +47,14 @@
         flex-direction: column;
         width: 20rem;
 
+        .virtual-section-hidden, .remote-section-hidden, .kettlebell-section-hidden {
+            display: none;
+        }
+
+        .remote-section-visible, .virtual-section-visible, .kettlebell-section-visible {
+            display: block;
+        }
+
         h2 {
             margin-top: 1rem;
         }
