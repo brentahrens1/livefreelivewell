@@ -4,18 +4,22 @@ import '../../sass/_program-calculator.scss'
 const ProgramCalculator = () => {
     const [ mainClick, setMainClick ] = useState(false)
     const [ total, setTotal ] = useState(0)
-    const [ remoteTotal, setRemoteTotal ] = useState(0)
-    const [ virtualTotal, setVirtualTotal ] = useState(0)
     const [ kbClicked, kbSetClicked ] = useState(false)
+    const [ remoteTotal, setRemoteTotal ] = useState(0)
     const [ remoteClicked, setRemoteClicked ] = useState(false)
+    const [ virtualTotal, setVirtualTotal ] = useState(0)
     const [ virtualClicked, setVirtualClicked ] = useState(false)
+    const [ inPersonTotal, setInPersonTotal ] = useState(0)
+    const [ inPersonClicked, setInPersonClicked] = useState(false)
 
     const kbClub = (e) => {
         kbSetClicked(!kbClicked)
-        if (total <= 0) {
-            setTotal(0)
-        }
         kbClicked && e.target.id === "kettlebell" ? setTotal(total - 20) : setTotal(total + 20)
+    }
+
+    const remote = (e) => {
+        setRemoteClicked(!remoteClicked)
+        remoteClicked && e.target.id === "remote" ? setTotal(total - 50) : setTotal(total + 50)
     }
 
     return (
@@ -25,41 +29,45 @@ const ProgramCalculator = () => {
                 <p>All prices listed below are on a monthly basis</p>
                 <p>Let's do the math!</p>
                 <div className="program-calculator__btns">
-                    <button id="remote-training" className={`${remoteClicked ? 'active' : ''}`} onClick={() => setRemoteClicked(!remoteClicked)}>Remote Training</button>
-                    <div className={`${remoteClicked ? "remote-section-visible" : "remote-section-hidden"}`}>
-                        <p>Days a week per month</p>
-                        <div className="days">
-                            <button id="remote-1" className={`${remoteTotal === 50 ? 'active' : ''}`} onClick={e => {
-                                e.target.id === 'remote-1' ? setRemoteTotal(50) : setRemoteTotal(remoteTotal - 50)
-                            }}>1</button>
-                            <button id="remote-2" className={`${remoteTotal === 100 ? 'active' : ''}`} onClick={e => {
-                                e.target.id === 'remote-2' ? setRemoteTotal(100) : setRemoteTotal(remoteTotal - 100)
-                            }}>2</button>
-                            <button id="remote-3" className={`${remoteTotal === 150 ? 'active' : ''}`} onClick={e => {
-                                e.target.id === 'remote-3' ? setRemoteTotal(150) : setRemoteTotal(remoteTotal - 150)
-                            }}>3</button>
-                            <button id="remote-4" className={`${remoteTotal === 200 ? 'active' : ''}`} onClick={e => {
-                                e.target.id === 'remote-4' ? setRemoteTotal(200) : setRemoteTotal(remoteTotal - 200)
-                            }}>4</button>
-                            <button id="remote-5" className={`${remoteTotal === 250 ? 'active' : ''}`} onClick={e => {
-                                e.target.id === 'remote-5' ? setRemoteTotal(250) : setRemoteTotal(remoteTotal - 250)
-                            }}>5</button>
-                            <button id="remote-6" className={`${remoteTotal === 300 ? 'active' : ''}`} onClick={e => {
-                                e.target.id === 'remote-6' ? setRemoteTotal(300) : setRemoteTotal(remoteTotal - 300)
-                            }}>6</button>
-                            <button id="remote-7" className={`${remoteTotal === 350 ? 'active' : ''}`} onClick={e => {
-                                e.target.id === 'remote-7' ? setRemoteTotal(350) : setRemoteTotal(remoteTotal - 350)
-                            }}>7</button>
-                            <button className="reset" onClick={() => setRemoteTotal(0)}>Reset</button>
-                        </div>
-                    </div>
                     <button id="kettlebell" className={`${kbClicked ? 'active' : ''}`} onClick={kbClub}>Kettlebell Club</button>
                     <div className={`${kbClicked ? "kettlebell-section-visible" : "kettlebell-section-hidden"}`}>
-                        <p>Kettlebell Club is once a week</p>
+                        <p>Kettlebell Club is once a week.</p>
+                    </div>
+                    <button id="remote" className={`${remoteClicked ? 'active' : ''}`} onClick={remote}>Remote Training</button>
+                    <div className={`${remoteClicked ? "remote-section-visible" : "remote-section-hidden"}`}>
+                        <p>Remote Training is once a week.</p>
+                    </div>
+                    <button id="in-person-training" className={`${inPersonClicked ? 'active' : ''}`} onClick={() =>  setInPersonClicked(!inPersonClicked)}>In-Person Training</button>
+                    <div className={`${inPersonClicked ? "in-person-section-visible" : "in-person-section-hidden"}`}>
+                        <p>Days per week</p>
+                        <div className="days">
+                            <button id="in-person-1" className={`${inPersonTotal === 50 ? 'active' : ''}`} onClick={e => {
+                                e.target.id === 'in-person-1' ? setInPersonTotal(50) : setInPersonTotal(inPersonTotal - 50)
+                            }}>1</button>
+                            <button id="in-person-2" className={`${inPersonTotal === 100 ? 'active' : ''}`} onClick={e => {
+                                e.target.id === 'in-person-2' ? setInPersonTotal(100) : setInPersonTotal(inPersonTotal - 100)
+                            }}>2</button>
+                            <button id="in-person-3" className={`${inPersonTotal === 150 ? 'active' : ''}`} onClick={e => {
+                                e.target.id === 'in-person-3' ? setInPersonTotal(150) : setInPersonTotal(inPersonTotal - 150)
+                            }}>3</button>
+                            <button id="in-person-4" className={`${inPersonTotal === 200 ? 'active' : ''}`} onClick={e => {
+                                e.target.id === 'in-person-4' ? setInPersonTotal(200) : setInPersonTotal(inPersonTotal - 200)
+                            }}>4</button>
+                            <button id="in-person-5" className={`${inPersonTotal === 250 ? 'active' : ''}`} onClick={e => {
+                                e.target.id === 'in-person-5' ? setInPersonTotal(250) : setInPersonTotal(inPersonTotal - 250)
+                            }}>5</button>
+                            <button id="in-person" className={`${inPersonTotal === 300 ? 'active' : ''}`} onClick={e => {
+                                e.target.id === 'in-person' ? setInPersonTotal(300) : setInPersonTotal(inPersonTotal - 300)
+                            }}>6</button>
+                            <button id="in-person" className={`${inPersonTotal === 350 ? 'active' : ''}`} onClick={e => {
+                                e.target.id === 'in-person' ? setInPersonTotal(350) : setInPersonTotal(inPersonTotal - 350)
+                            }}>7</button>
+                            <button className="reset" onClick={() => setInPersonTotal(0)}>Reset</button>
+                        </div>
                     </div>
                     <button id="virtual-training" className={`${virtualClicked ? 'active' : ''}`} onClick={() => setVirtualClicked(!virtualClicked)}>Virtual Training</button>
                     <div className={`${virtualClicked ? "virtual-section-visible" : "virtual-section-hidden"}`}>
-                        <p>Days a week per month</p>
+                        <p>Days per week</p>
                         <div className="days">
                         <button id="virtual-1" className={`${virtualTotal === 60 ? 'active' : ''}`} onClick={e => {
                                 e.target.id === 'virtual-1' ? setVirtualTotal(60) : setVirtualTotal(virtualTotal - 60)
@@ -85,7 +93,7 @@ const ProgramCalculator = () => {
                             <button className="reset" onClick={() => setVirtualTotal(0)}>Reset</button>
                     </div>
                     </div>
-                    <h1>${total + virtualTotal + remoteTotal}</h1>
+                    <h1>${total + virtualTotal + inPersonTotal + remoteTotal}</h1>
                 </div>
             </div>
         </div>

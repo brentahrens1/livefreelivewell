@@ -47,11 +47,11 @@
         flex-direction: column;
         width: 20rem;
 
-        .virtual-section-hidden, .remote-section-hidden, .kettlebell-section-hidden {
+        .virtual-section-hidden, .remote-section-hidden, .kettlebell-section-hidden, .in-person-section-hidden {
             display: none;
         }
 
-        .remote-section-visible, .virtual-section-visible, .kettlebell-section-visible {
+        .remote-section-visible, .virtual-section-visible, .kettlebell-section-visible, .in-person-section-visible {
             display: block;
         }
 
