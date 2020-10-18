@@ -19,7 +19,6 @@ const Home = () => {
             </div>
             {
                 programs.map((program, idx) =>
-                    <Link key={idx} to={program.path}>
                         <div className="home__programs">
                             <div className="home__programs-image">
                                 <img src={program.img} alt={program.title} />
@@ -27,10 +26,9 @@ const Home = () => {
                             <div className="home__programs-content">
                                 <h1>{program.title}</h1>
                                 <p>{program.description}</p>
-                                <button>{program.buttonTxt}</button>
+                                <Link to="/contact"><button>{program.buttonTxt}</button></Link>
                             </div>
                         </div>
-                    </Link>
                 )
             }
         </div>
