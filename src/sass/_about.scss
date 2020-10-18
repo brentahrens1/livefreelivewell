@@ -49,8 +49,6 @@
     }
 
     &__philosophy {
-        position: sticky;
-        top: 5rem;
         width: 100%;
         height: 100%;
         background: #2F2F2F;
@@ -129,6 +127,7 @@
         background:  #2F2F2F;
         padding: 4rem;
         color: #fff;
+        z-index: 1000;
 
         ul {
             margin: 0 auto;

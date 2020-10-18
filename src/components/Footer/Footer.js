@@ -17,8 +17,8 @@ const Footer = () => {
             <div className="footer__social">
                 <ul>
                     <li><Testimonials /></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="/about">About</a></li>
+                    <li><a href="/contact">Contact</a></li>
                 </ul>
             </div>
         </div>
