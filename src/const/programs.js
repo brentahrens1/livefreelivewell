@@ -3,6 +3,7 @@ import React from 'react'
 import kettlbells from '../assets/images/programs/kettlebelll-club-min.png'
 import coaching from '../assets/images/programs/coaching-min.png'
 import training from '../assets/images/programs/training-min.png'
+import wednesday from '../assets/images/programs/q&a.png'
 
 export const programs = [
     {
@@ -50,7 +51,25 @@ export const programs = [
                         <li>Program Tracking: Metrics & Pictures</li>
                         <li>Live Feedback</li>
                     </ul>
-                    <h4>$60 / MO</h4>
+                    <h4>$15 per session | Virtual</h4>
+                    <h4>$60 per session | In-Person</h4>
+                </>,
+        link: '',
+        buttonTxt: 'Start Now',
+        path: 'training'
+    },
+    {
+        title: "Live Workout + Q&A",
+        img: wednesday,
+        description: <>
+                    <ul>
+                        <li>Minimal To No Equiptment Required</li>
+                        <li>Train With Virtual Community</li>
+                        <li>Focus On Fucntional Strength, Stability, and Mobility</li>
+                        <li>20 Minute Discussion On General Health, Fitness, Nutrition Habits & Much More</li>
+                        <li>Wednesday 5PM-PT</li>
+                    </ul>
+                    <h4>Free Access with purchase of any of the programs.</h4>
                 </>,
         link: '',
         buttonTxt: 'Start Now',

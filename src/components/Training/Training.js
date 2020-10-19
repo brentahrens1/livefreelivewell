@@ -33,6 +33,7 @@ const Training = () => {
                     <li>Meet At Preferred Location (in-person)</li>
                     <li>Program Tracking: Metrics & Pictures</li>
                     <li>Live Feedback</li>
+                    <li>Free Access To Live Workout and Q&A</li>
                 </ul>
                 <button><Link to="/contact">Join The Club</Link></button>
                 <ProgramCalculator />

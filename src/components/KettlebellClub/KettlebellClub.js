@@ -33,6 +33,7 @@ const KettlebellClub = () => {
                     <li>Train With Virtual Community</li>
                     <li>Program Tracking: Metrics & Pictures</li>
                     <li>Saturday 9am PST & 10:30am PT</li>
+                    <li>Free Access To Live Workout and Q&A</li>
                 </ul>
                 <button><Link to="contact">Join The Club</Link></button>
                 <ProgramCalculator />
