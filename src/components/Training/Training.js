@@ -14,14 +14,14 @@ const Training = () => {
         <div className="program">
             <div className="program__gallery">
                 <div className="program__gallery-image one">
-                    <img src={picOne} />
+                    <img src={picOne} alt="LIVEFREELIVEWELl | Personal Training" />
                 </div>
-                <div className="program__gallery-image two">
+                {/* <div className="program__gallery-image two">
                     <img src={picTwo} />
                 </div>
                 <div className="program__gallery-image three">
                     <img src={picThree} />
-                </div>
+                </div> */}
             </div>
             <div className="program__info">
                 <h1>Personal Training | In Person or Virtual</h1>

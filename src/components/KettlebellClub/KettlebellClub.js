@@ -16,12 +16,12 @@ const KettlebellClub = () => {
                 <div className="program__gallery-image one">
                     <img src={picOne} />
                 </div>
-                <div className="program__gallery-image two">
+                {/* <div className="program__gallery-image two">
                     <img src={picTwo} />
                 </div>
                 <div className="program__gallery-image three">
                     <img src={picThree} />
-                </div>
+                </div> */}
             </div>
             <div className="program__info">
                 <h1>Kettlebell Club</h1>

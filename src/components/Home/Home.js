@@ -19,9 +19,9 @@ const Home = () => {
             </div>
             {
                 programs.map((program, idx) =>
-                        <div className="home__programs">
+                        <div key={idx} className="home__programs">
                             <div className="home__programs-image">
-                                <img src={program.img} alt={program.title} />
+                                <img loading="lazy" src={program.img} alt={program.title} />
                             </div>
                             <div className="home__programs-content">
                                 <h1>{program.title}</h1>
