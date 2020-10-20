@@ -12,6 +12,7 @@
         grid-gap: 10px;
         margin-right: 2rem;
         width: 60%;
+        animation: grid-gap .5s ease-in;
 
         .program__gallery-image {
             width: 100%;
@@ -22,6 +23,7 @@
 
         .one {
             grid-area: top;
+            animation: slide-down .5s ease-in;
         }
 
         .two {
@@ -77,5 +79,27 @@
             margin-bottom: 1rem;
             width: 100%;
         }
+    }
+}
+
+@keyframes grid-gap {
+    0% {
+        grid-gap: 3rem;
+        opacity: 0;
+    }
+    100% {
+        grid-gap: 10px;
+        opacity: 1;
+    }
+}
+
+@keyframes slide-down {
+    0% {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
     }
 }
