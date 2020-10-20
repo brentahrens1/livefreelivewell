@@ -36,7 +36,6 @@
 
             button {
                 margin-top: 1rem;
-                padding: .5rem;
                 font-size: 1.1rem;
                 width: 20rem;
                 text-transform: uppercase;
@@ -45,6 +44,12 @@
                 border-radius: 5px;
                 background: transparent;
                 cursor: pointer;
+
+                a {
+                    display: block;
+                    width: 100%;
+                    padding: .5rem;
+                }
             }
         }
     }
