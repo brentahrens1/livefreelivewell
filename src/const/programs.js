@@ -1,7 +1,7 @@
 import React from 'react'
 
 import kettlbells from '../assets/images/programs/kettlebelll-club-min.png'
-import coaching from '../assets/images/programs/coaching-min.png'
+import coaching from '../assets/images/programs/bands-min.png'
 import training from '../assets/images/programs/training-min.png'
 import wednesday from '../assets/images/programs/q&a.png'
 
