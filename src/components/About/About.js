@@ -19,7 +19,7 @@ const About = () => {
                     <img src={RodneyProfile} alt="Rodney Lozier" />
                 </div>
             </div>
-            <div className="about__philosophy">
+            {/* <div className="about__philosophy">
                 <div className="about__philosophy-body">
                     <p>Included with purchase of any program</p>
                     <p>Live Workout + Q&A</p>
@@ -29,7 +29,7 @@ const About = () => {
                     <p>45 minute training followed by 20 minute discussion on General health, Fitness, Nutrition Habits & Much More</p>
                     <p>Every Wednesday 5pm PT</p>
                 </div>
-            </div>
+            </div> */}
             <div className="about__background">
                 <div className="about__background-body">
                     <div className="about__background-image">
