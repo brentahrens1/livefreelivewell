@@ -41,6 +41,7 @@
         .about__intro-image {
             width: 80%;
             justify-self: center;
+            animation: slide-down .5s ease-in;
 
             img {
                 width: 100%;
@@ -220,5 +221,16 @@
                 @include grid-mobile;
             }
         }
+    }
+}
+
+@keyframes slide-down {
+    0% {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
     }
 }
