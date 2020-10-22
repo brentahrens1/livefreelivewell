@@ -4,8 +4,6 @@ import '../../sass/_programs.scss'
 import { Link } from 'react-router-dom'
 
 import picOne from '../../assets/images/programs/training-min.png'
-import picTwo from '../../assets/images/programs/solo-class-min.png'
-import picThree from '../../assets/images/programs/solo-bell-min.png'
 
 import ProgramCalculator from '../ProgramCalculator/ProgramCalculator'
 

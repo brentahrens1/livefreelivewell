@@ -6,15 +6,13 @@ import { Link } from 'react-router-dom'
 import ProgramCalculator from '../ProgramCalculator/ProgramCalculator'
 
 import picOne from '../../assets/images/programs/kettlebelll-club-min.png'
-import picTwo from '../../assets/images/programs/snatch-min.png'
-import picThree from '../../assets/images/programs/mid-swing-min.png'
 
 const KettlebellClub = () => {
     return (
         <div className="program">
             <div className="program__gallery">
                 <div className="program__gallery-image one">
-                    <img src={picOne} />
+                    <img src={picOne} alt="LIVEFREELIVEWELL | Kettlebell Club" />
                 </div>
                 {/* <div className="program__gallery-image two">
                     <img src={picTwo} />

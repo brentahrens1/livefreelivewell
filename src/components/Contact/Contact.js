@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React from 'react'
 import '../../sass/_contact.scss'
 
 import ContactForm from '../ContactForm/ContactForm'

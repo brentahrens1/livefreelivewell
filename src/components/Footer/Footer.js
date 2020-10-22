@@ -19,10 +19,10 @@ const Footer = () => {
                     <h1>#livefreelivewell</h1>
                     <div className="icons">
                         <div className="icons__image">
-                            <a href="https://www.instagram.com/livefreelivewell/" target="_blank"><img src={instagram} alt="LIVEFREELIVEWELL | Instagram" /></a>
+                            <a href="https://www.instagram.com/livefreelivewell/" target="_blank" rel="noopener noreferrer"><img src={instagram} alt="LIVEFREELIVEWELL | Instagram" /></a>
                         </div>
                         <div className="icons__image">
-                            <a href="https://twitter.com/infotolive" target="_blank"><img src={twiiter} alt="LIVEFREELIVEWELL | Twitter" /></a>
+                            <a href="https://twitter.com/infotolive" target="_blank" rel="noopener noreferrer"><img src={twiiter} alt="LIVEFREELIVEWELL | Twitter" /></a>
                         </div>
                     </div>
                 </div>

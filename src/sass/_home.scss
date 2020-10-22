@@ -63,6 +63,7 @@
         // margin: 0 auto;
         // margin-top: 3rem;
         // box-shadow: 0 1rem 2rem rgba(0,0,0,0.1);
+        transition: all .5s ease-in-out;
 
         &:hover {
             box-shadow: .5rem 2rem 2rem rgba(0,0,0,0.3);
@@ -105,11 +106,11 @@
                 font-size: 1.3rem;
             }
 
-            h1, p {
+            h1, ul {
                 color: #fff;
             }
 
-            p {
+            ul {
                 font-size: 1.6rem;
                 margin-bottom: 1.5rem;
             }

@@ -3,9 +3,7 @@ import '../../sass/_programs.scss'
 
 import { Link } from 'react-router-dom'
 
-import picOne from '../../assets/images/programs/coaching-min.png'
-import picTwo from '../../assets/images/programs/coach-min.png'
-import picThree from '../../assets/images/programs/new-group-train-min.png'
+import picOne from '../../assets/images/programs/remote-coaching.png'
 
 import ProgramCalculator from '../ProgramCalculator/ProgramCalculator'
 

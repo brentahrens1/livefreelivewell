@@ -1,13 +1,12 @@
-import React from 'react'
+import React, { useEffect, useRef, useState} from 'react'
 import '../../sass/_home.scss'
 
 import { Link } from 'react-router-dom'
 
 import { programs } from '../../const/programs'
-
-import testImg from '../../assets/images/programs/coaching-min.png'
  
 const Home = () => {
+
     return (
         <div className="home">
             <div className="home__card">
@@ -25,7 +24,7 @@ const Home = () => {
                             </div>
                             <div className="home__programs-content">
                                 <h1>{program.title}</h1>
-                                <p>{program.description}</p>
+                                {program.description}
                                 <Link to="/contact"><button>{program.buttonTxt}</button></Link>
                             </div>
                         </div>

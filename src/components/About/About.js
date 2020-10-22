@@ -32,7 +32,7 @@ const About = () => {
             <div className="about__background">
                 <div className="about__background-body">
                     <div className="about__background-image">
-                        <img src={aboutOne} />
+                        <img src={aboutOne} alt="LIVEFREELIVEWELL | ABOUT" />
                     </div>
                     <div className="about__background-blurb">
                         <h1>During The Strategy Session</h1>

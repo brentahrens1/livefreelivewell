@@ -5,12 +5,12 @@ const ProgramCalculator = () => {
     const [ mainClick, setMainClick ] = useState(false)
     const [ total, setTotal ] = useState(0)
     const [ kbClicked, kbSetClicked ] = useState(false)
-    const [ remoteTotal, setRemoteTotal ] = useState(0)
     const [ remoteClicked, setRemoteClicked ] = useState(false)
     const [ virtualTotal, setVirtualTotal ] = useState(0)
     const [ virtualClicked, setVirtualClicked ] = useState(false)
     const [ inPersonTotal, setInPersonTotal ] = useState(0)
     const [ inPersonClicked, setInPersonClicked] = useState(false)
+    const remoteTotal = 0
 
     const kbClub = (e) => {
         kbSetClicked(!kbClicked)
