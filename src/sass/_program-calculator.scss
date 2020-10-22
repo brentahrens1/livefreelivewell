@@ -82,6 +82,10 @@
         align-items: center;
         width: 20rem;
 
+        .total {
+            margin-top: 1rem;
+        }
+
         .virtual-section-hidden, .remote-section-hidden, .kettlebell-section-hidden, .in-person-section-hidden {
             display: none;
         }

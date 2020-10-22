@@ -100,7 +100,7 @@ const ProgramCalculator = () => {
                                 <button className="reset" onClick={() => setInPersonTotal(0)}>Reset</button>
                             </div>
                         </div>
-                        <h1>${total + virtualTotal + inPersonTotal + remoteTotal} / Month</h1>
+                        <h1 className="total">${total + virtualTotal + inPersonTotal + remoteTotal} / Month</h1>
                     </div>
                 </div>
             </div>
