@@ -1,7 +1,7 @@
 .program-calculator {
     display: flex;
     flex-direction: column;
-    justify-content: start;
+    justify-content: flex-start;
     margin-top: 1.8rem;
 
     .calc-container-hidden {
