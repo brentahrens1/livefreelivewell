@@ -127,6 +127,7 @@
                 content: '';
             }
         }
+
         button {
             position: relative;
             margin-bottom: .3rem;
@@ -135,6 +136,7 @@
             background: transparent;
             cursor: pointer;
             color: #153F6D;
+            border: 2px solid #153F6D;
             letter-spacing: 2px;
 
             &:nth-child(1) {
