@@ -5,6 +5,10 @@
     width: 100%;
     display: flex;
 
+    .program-calculator {
+        color: #153F6D;
+    }
+
     &__gallery {
         display: grid;
         grid-template-areas: 'top top top top';

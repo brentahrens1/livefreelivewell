@@ -24,7 +24,7 @@ const Home = () => {
                 <div className="home__programs-image">
                     <img src={coaching} alt="Remote Coaching" />
                 </div>
-                <div className="home__programs-content">
+                <div className="home__programs-content rm">
                     <h1>Remote Coaching:</h1>
                     <>
                     <ul>
@@ -39,7 +39,7 @@ const Home = () => {
                     <button><Link to="/contact">Start Now</Link></button>
                 </div>
             </div>
-            <div className="home__programs">
+            <div className="home__programs kb">
                 <div className="home__programs-content">
                     <h1>Kettlebell Club:</h1>
                     <>
@@ -58,7 +58,7 @@ const Home = () => {
                     <img src={kettlbells} alt="Kettlebell Club" />
                 </div>
             </div>
-            <div className="home__programs">
+            <div className="home__programs pt">
                 <div className="home__programs-image">
                     <img src={training} alt="Personal Training (In-Person or Virtual)" />
                 </div>
@@ -78,7 +78,7 @@ const Home = () => {
                     <button><Link to="/contact">Start Now</Link></button>
                 </div>
             </div>
-            <div className="home__programs">
+            <div className="home__programs qa">
                 <div className="home__programs-content">
                     <h1>Live Workout + Q&A:</h1>
                     <>

@@ -8,7 +8,6 @@
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
-        box-shadow: 0 1rem 2.5rem rgba(0,0,0,0.2);
         height: 100vh;
 
         .home__card-cta {
@@ -127,11 +126,6 @@
                     color: #fff;
                     letter-spacing: 7px;
                 }
-
-                &:hover {
-                    background: #fff;
-                    color: #153F6D;
-                }
             }
 
             .kb-btn {
@@ -170,11 +164,23 @@
 @media (max-width: 900px) {
     .home {
         &__programs {
+
+            .home__programs-image {
+                order: 1;
+            }
+
+            .home__programs-content {
+                order: 2;
+            }
     
             .home__programs-content {
                 display: flex;
                 flex-direction: column;
                 justify-content: space-between;
+
+                .kb-btn {
+                    width: 100%;
+                }
     
                 p {
                     width: 100%;
@@ -185,6 +191,15 @@
                     width: 100%;
                     padding: .5rem;
                 }
+            }
+            .qa {
+
+            }
+            .rm {
+
+            }
+            .pt {
+
             }
         }
     }
