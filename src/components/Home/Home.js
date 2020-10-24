@@ -52,7 +52,7 @@ const Home = () => {
                     </ul>
                     <h1>$20/MO</h1>
                     </>
-                    <button><Link to="/contact">Join The Club</Link></button>
+                    <button className="kb-btn"><Link to="/contact">Join The Club</Link></button>
                 </div>
                 <div className="home__programs-image">
                     <img src={kettlbells} alt="Kettlebell Club" />
