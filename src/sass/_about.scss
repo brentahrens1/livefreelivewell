@@ -1,10 +1,3 @@
-@mixin grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(1, 1fr);
-    grid-gap: 20px;
-}
-
 .about {
     margin-top: 6rem;
     margin-bottom: 0rem;
@@ -20,26 +13,35 @@
     }
 
     &__intro {
-        width: 100%;
+        width: 80%;
         height: 100%;
+        display: flex;
         padding: 4rem;
-        margin-bottom: 2rem;
-        @include grid;
+        padding-right: 8rem;
+        padding-left: 8rem;
+        margin: 0 auto;
 
-        h1 {
-            text-align: left;
-        }
+        
+        .about__intro-text {
+            width: 100%;
+            padding-right: 2rem;
 
-        p {
-            font-size: 1.3rem;
-        }
+            h1 {
+                text-align: left;
+            }
+    
+            p {
+                font-size: 1.3rem;
+            }
+    
+            p:not(:last-child) {
+                margin-bottom: 5rem;
+            }
 
-        p:not(:last-child) {
-            margin-bottom: 5rem;
         }
 
         .about__intro-image {
-            width: 80%;
+            width: 50%;
             justify-self: center;
             animation: slide-down .5s ease-in;
 
@@ -49,57 +51,21 @@
         }
     }
 
-    &__philosophy {
-        width: 100%;
-        height: 100%;
-        background: #2F2F2F;
-        padding: 4rem;
-        color: #fff;
-        text-align: center;
-
-        p {
-            margin-bottom: 1rem;
-        }
-
-        .about__philosophy-body {
-            width: 55%;
-            margin: 0 auto;
-        }
-    }
-
     &__background {
-        position: relative;
-        width: 100%;
+        width: 80%;
         height: 100%;
-        background: #fff;
+        display: flex;
         padding: 4rem;
-        color: #000;
-
-        h1 {
-            text-align: left;
-        }
-
-        .get-started {
-            width: 55%;
-            margin: 0 auto;
-        }
+        padding-right: 8rem;
+        padding-left: 8rem;
+        margin: 0 auto;
 
         .about__background-body {
+            display: flex;
             width: 100%;
-            margin: 0 auto;
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            grid-template-rows: repeat(1, 1fr);
-            grid-gap: 3rem;
-            grid-row-gap: 5rem;
-
-            .image-two {
-                margin-left: 3rem;
-            }
 
             .about__background-image {
-                width: 100%;
-                align-self: start;
+                width: 40%;
 
                 img {
                     width: 100%;
@@ -107,7 +73,12 @@
             }
 
             .about__background-blurb {
-                align-self: start;
+                width: 60%;
+                padding-left: 3rem;
+
+                h1 {
+                    text-align: left;
+                }
 
                 ul {
                     margin-bottom: 3rem;
@@ -130,36 +101,43 @@
         color: #fff;
         z-index: 1000;
 
-        ul {
-            margin: 0 auto;
-
-            li {
-                margin-bottom: .5rem;
-                list-style-type: disc;
-            }
+        h1 {
+            margin-bottom: 1.5rem;
         }
 
         .about__certifications__body {
+            display: flex;
             width: 85%;
             margin: 0 auto;
-            @include grid;
+
+            ul {
+                margin: 0 auto;
+    
+                li {
+                    margin-bottom: .5rem;
+                    list-style-type: disc;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1300px) {
+
+    .about {
+        &__intro, &__background  {
+            width: 100%;
         }
     }
 }
 
 @media (max-width: 800px) {
-    @mixin grid-mobile {
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: repeat(1, 1fr);
-        grid-gap: 20px;
-    }
     
     .about {
         margin-top: 6.5rem;
     
         &__intro {
-            @include grid-mobile;
+            flex-direction: column;
             padding: 1rem;
             padding-top: 0;
 
@@ -177,37 +155,21 @@
             }
         }
     
-        &__philosophy {
-            position: relative;
-            padding: 3rem 1.5rem;
-            top: 0;
-
-            .about__philosophy-body {
-                width: 100%;
-                @include grid-mobile;
-            }
-        }
-    
         &__background {
             padding: 2rem 1rem;
 
             .about__background-body {
+                flex-direction: column;
                 width: 100%;
-                grid-template-columns: repeat(1, 1fr);
-                grid-template-rows: repeat(1, 1fr);
                 margin-top: 0;
 
                 .about__background-image {
                     width: 100%;
                     justify-self: center;
                 }
-    
-                .image-two {
-                    margin-left: 0;
-                }
 
                 .about__background-blurb {
-                    justify-self: center;
+                    width: 100%;
                     padding: 1rem;
                 }
             }
@@ -218,7 +180,6 @@
             margin: 0;
 
             .about__certifications__body {
-                @include grid-mobile;
             }
         }
     }

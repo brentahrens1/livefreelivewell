@@ -3,7 +3,7 @@
     top: 0;
     left: 0;
     width: 100%;
-    height: 5rem;
+    height: 9rem;
     background: #fff;
     font-weight: 500;
     z-index: 999;
@@ -15,8 +15,8 @@
     align-items: center;
 
     &__logo {
-        width: 10rem;
-        margin-left: 1rem;
+        width: 13rem;
+        margin-left: 3rem;
 
         img {
             width: 100%;
@@ -30,16 +30,23 @@
     }
 
     &__list {
-        margin-right: 1rem;
-        display: inline;
+        width: 50rem;
+        display: flex;
+        justify-content: space-between;
+        margin-right: 3rem;
 
         .nav__list-item {
             position: relative;
             display: inline-block;
+            letter-spacing: 7px;
+            font-size: 1.3rem;
+            color: #0E538F;
+            font-weight: 700;
 
             a:link, a:visited {
                 padding: 25px 20px;
                 display: block;
+                color: #0E538F;
             }
 
             &:hover {
@@ -52,16 +59,17 @@
             }
 
             &:hover .nav__dropdown {
-                right: -11.9rem;
+                left: 0rem;
                 opacity: 1;
+                top: 4.7rem;
             }
         }
     }
 
     .nav__dropdown {
         position: absolute;
-        top: 4.3rem;
-        right: -35rem;
+        top: -4.7rem;
+        left: 0rem;
         opacity: 0;
         width: 315px;
         background: #0E538F;

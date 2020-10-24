@@ -11,14 +11,9 @@
         box-shadow: 0 1rem 2.5rem rgba(0,0,0,0.2);
         height: 100vh;
 
-        p {
-            text-align: center;
-        }
-
         .home__card-cta {
-            background: rgba(255,255,255,0.7);
-            width: 30rem;
-            height: 13rem;
+            width: 60rem;
+            height: 60rem;
             border-radius: 5px;
             padding: 1rem;
             position: absolute;
@@ -30,18 +25,28 @@
             justify-content: center;
             align-items: center;
 
-            h2 {
+            h1 {
+                font-size: 3.9rem;
+                color: #fff;
                 margin-bottom: .5rem;
+                text-align: center;
+                letter-spacing: 7px;
+            }
+
+            p {
+                text-align: center;
+                font-size: 2rem;
+                color: #fff;
             }
 
             button {
-                margin-top: 1rem;
+                margin-top: 6rem;
                 font-size: 1.1rem;
-                width: 20rem;
+                width: 15rem;
+                height: 4rem;
                 text-transform: uppercase;
                 font-weight: 700;
-                border: 2px solid #000;
-                border-radius: 5px;
+                border: 2.5px solid #fff;
                 background: transparent;
                 cursor: pointer;
 
@@ -49,6 +54,9 @@
                     display: block;
                     width: 100%;
                     padding: .5rem;
+                    color: #fff;
+                    letter-spacing: 7px;
+                    font-weight: 700;
                 }
             }
         }
@@ -57,23 +65,6 @@
     &__programs {
         display: flex;
         margin: 4rem 2rem;
-        box-shadow: 0 1rem 2rem rgba(0,0,0,0.2);
-        // width: 90%;
-        // padding: 2rem;
-        // margin: 0 auto;
-        // margin-top: 3rem;
-        // box-shadow: 0 1rem 2rem rgba(0,0,0,0.1);
-        transition: all .5s ease-in-out;
-
-        &:hover {
-            box-shadow: .5rem 2rem 2rem rgba(0,0,0,0.3);
-            transform: translateY(-2px);
-        }
-
-        h1 {
-            text-transform: uppercase;
-            margin-bottom: .5rem;
-        }
 
         .home__programs-image {
             width: 100%;
@@ -94,20 +85,25 @@
             flex-direction: column;
             background: #0E538F;
 
+            h1 {
+                text-transform: uppercase;
+                margin-bottom: .5rem;
+                letter-spacing: 7px;
+                font-size: 32px;
+                color: #fff;
+            }
+
             ul {
-                margin-left: 1rem;
+                padding-left: 1.5rem;
+
+                h1 {
+                    margin-top: 1rem;
+                }
+
                 li {
                     list-style-type: disc;
+                    color: #5978A9;
                 }
-            }
-
-            h4 {
-                margin-top: 1rem;
-                font-size: 1.3rem;
-            }
-
-            h1, ul {
-                color: #fff;
             }
 
             ul {
@@ -115,73 +111,32 @@
                 margin-bottom: 1.5rem;
             }
 
-            button {
-                font-size: 1.1rem;
+            button {      
+                margin-top: 1rem;          
+                font-size: 1.3rem;
+                font-weight: 700;
                 width: 15rem;
+                height: 4rem;
                 text-transform: uppercase;
                 font-weight: 700;
-                border: 1.8px solid #fff;
-                color: #fff;
-                border-radius: 5px;
+                border: 2.5px solid #fff;
                 background: transparent;
-                padding: 1rem;
                 cursor: pointer;
+
+                a {
+                    display: block;
+                    width: 100%;
+                    padding: .5rem;
+                    color: #fff;
+                    letter-spacing: 7px;
+                    font-weight: 700;
+                }
 
                 &:hover {
                     background: #fff;
                     color: #0E538F;
                 }
             }
-        }
-    }
-
-    .home-test {
-        display: flex;
-        margin: 4rem;
-        box-shadow: 0 1rem 2rem rgba(0,0,0,0.1);
-
-        .home-test-image {
-            width: 100%;
-
-            img {
-                width: 100%;
-                height: 100%;
-            }
-        }
-
-        .home-test-content {
-            width: 85%;
-            padding: 1.5rem;
-            padding-top: 0;
-            display: flex;
-            flex-direction: column;
-            background: #0E538F;
-
-            h1 {
-                margin-top: .5rem;
-            }
-
-            h1, p {
-                color: #fff;
-            }
-
-            p {
-                font-size: 1.6rem;
-                margin-bottom: 1.5rem;
-            }
-        }
-
-        button {
-            font-size: 1.1rem;
-            width: 15rem;
-            text-transform: uppercase;
-            font-weight: 700;
-            border: 1.8px solid #fff;
-            color: #fff;
-            border-radius: 5px;
-            background: transparent;
-            cursor: pointer;
-            padding: 1rem;
         }
     }
 }
@@ -241,7 +196,6 @@
         .home__card {
     
             .home__card-cta {
-                background: rgba(255,255,255,0.7);
                 width: 90%;
             }
         }
