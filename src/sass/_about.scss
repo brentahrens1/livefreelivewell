@@ -1,19 +1,21 @@
 .about {
-    margin-top: 6rem;
+    margin-top: 9rem;
     margin-bottom: 0rem;
 
     p, li {
         font-size: 1.4rem;
+        line-height: 1.8;
+        text-align: right;
     }
 
     h1 {
         margin-bottom: .5rem;
         text-align: center;
-        font-size: 1.5rem;
+        font-size: 1.4rem;
     }
 
     &__intro {
-        width: 80%;
+        width: 100%;
         height: 100%;
         display: flex;
         padding: 4rem;
@@ -27,11 +29,20 @@
             padding-right: 2rem;
 
             h1 {
-                text-align: left;
+                text-transform: uppercase;
+                margin-bottom: .5rem;
+                letter-spacing: 7px;
+                text-align: right;
+                color: #153F6D;
+            }
+
+            p {
+                margin-bottom: 2rem;
             }
     
-            p {
+            p, li {
                 font-size: 1.3rem;
+                color: #153F6D;
             }
     
             p:not(:last-child) {
@@ -41,7 +52,7 @@
         }
 
         .about__intro-image {
-            width: 50%;
+            width: 100%;
             justify-self: center;
             animation: slide-down .5s ease-in;
 
@@ -51,8 +62,21 @@
         }
     }
 
+    .about-client-stories {
+        width: calc(100%  - 6rem);
+        margin: 0 auto;
+        background: #153F6D;
+
+        h1 {
+            color: #fff;
+            font-size: 1.4rem;
+            padding: 2rem;
+            letter-spacing: 7px;
+        }
+    }
+
     &__background {
-        width: 80%;
+        width: 100%;
         height: 100%;
         display: flex;
         padding: 4rem;
@@ -78,46 +102,23 @@
 
                 h1 {
                     text-align: left;
+                    color: #153F6D;
+                    letter-spacing: 7px;
                 }
 
                 ul {
                     margin-bottom: 3rem;
+                    color: #153F6D;
+                    padding-left: 1.5rem;
 
                     li {
                         list-style-type: disc;
                         margin-bottom: .5rem;
+                        text-align: left;
                     }
                 }
             }
 
-        }
-    }
-
-    &__certifications {
-        width: 100%;
-        height: 100%;
-        background:  #2F2F2F;
-        padding: 4rem;
-        color: #fff;
-        z-index: 1000;
-
-        h1 {
-            margin-bottom: 1.5rem;
-        }
-
-        .about__certifications__body {
-            display: flex;
-            width: 85%;
-            margin: 0 auto;
-
-            ul {
-                margin: 0 auto;
-    
-                li {
-                    margin-bottom: .5rem;
-                    list-style-type: disc;
-                }
-            }
         }
     }
 }
