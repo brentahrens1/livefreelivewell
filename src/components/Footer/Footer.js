@@ -11,12 +11,21 @@ import twiiter from '../../assets/images/socials/twitter.png'
 const Footer = () => {
     return (
         <div className="footer">
-            <div className="footer__right">
-                <div className="footer__logo">
-                    <img src={footLogo} alt="livefreelivewell" />
+            <div className="footer__inner">
+                <div className="footer-left">
+                    <div className="footer__logo">
+                        <img src={footLogo} alt="livefreelivewell" />
+                    </div>
+                    <h1>#livefreelivewell</h1>
+                </div>
+                <div className="footer__social">
+                    <ul>
+                        <li><Testimonials /></li>
+                        <li><a href="/about">About</a></li>
+                        <li><a href="/contact">Contact</a></li>
+                    </ul>
                 </div>
                 <div className="media-box">
-                    <h1>#livefreelivewell</h1>
                     <div className="icons">
                         <div className="icons__image">
                             <a href="https://www.instagram.com/livefreelivewell/" target="_blank" rel="noopener noreferrer"><img src={instagram} alt="LIVEFREELIVEWELL | Instagram" /></a>
@@ -26,13 +35,6 @@ const Footer = () => {
                         </div>
                     </div>
                 </div>
-            </div>
-            <div className="footer__social">
-                <ul>
-                    <li><Testimonials /></li>
-                    <li><a href="/about">About</a></li>
-                    <li><a href="/contact">Contact</a></li>
-                </ul>
             </div>
         </div>
     )
