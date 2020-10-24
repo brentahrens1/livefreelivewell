@@ -24,7 +24,7 @@ const Training = () => {
             <div className="program__info">
                 <h1>Personal Training | In Person or Virtual</h1>
 
-                <h3>$60 / mo</h3>
+                <h1>$60/mo</h1>
                 <ul>
                     <li>Program Specific To Your Goals</li>
                     <li>Program Based On Available Equipment (virtual)</li>
@@ -33,7 +33,7 @@ const Training = () => {
                     <li>Live Feedback</li>
                     <li>Free Access To Live Workout and Q&A</li>
                 </ul>
-                <button><Link to="/contact">Join The Club</Link></button>
+                <button><Link to="/contact">Start Here</Link></button>
                 <ProgramCalculator />
             </div>
         </div>

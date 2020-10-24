@@ -15,13 +15,20 @@
    input, label, textarea, select {
        margin-bottom: 1rem;
    }
+
+   input, textarea, select {
+        border: 2px solid #153F6D;
+   }
    
    label {
        text-transform: uppercase;
+       font-size: 1.6rem;
+       color: #153F6D;
    }
 
-   select {
+   select, option {
        width: 300px;
+       color: #153F6D;
    }
 
    input, textarea, select {
@@ -34,11 +41,12 @@
    }
 
    .btn {
-       background: #0E538F;
-       color: #fff;
+       background: transparent;
+       color: #153F6D;;
        text-transform: uppercase;
-       border: none;
+       border: 2px solid #153F6D;;
        cursor: pointer;
+       font-size: 1.6rem;
        -webkit-appearance: none;
    }
 }

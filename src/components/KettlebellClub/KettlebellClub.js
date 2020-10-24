@@ -24,7 +24,7 @@ const KettlebellClub = () => {
             <div className="program__info">
                 <h1>Kettlebell Club</h1>
 
-                <h3>$20 / mo</h3>
+                <h1>$20/mo</h1>
                 <ul>
                     <li>Learn And Refine Kettlebell-Specific Skills</li>
                     <li>Structured Approach To Prevent Risk Of Injury</li>
