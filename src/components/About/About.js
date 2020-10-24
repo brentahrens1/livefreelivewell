@@ -1,6 +1,8 @@
 import React from 'react'
 import '../../sass/_about.scss'
 
+import { Link } from 'react-router-dom'
+
 import RodneyProfile from '../../assets/images/about/Profile Pic-min.jpg'
 import aboutOne from '../../assets/images/programs/pt.jpg'
 
@@ -32,7 +34,7 @@ const About = () => {
                 </div>
             </div>
             <div className="about-client-stories">
-                <h1>Client Stories</h1>
+                <h1><Link to="/testimonials">Client Stories</Link></h1>
             </div>
             <div className="about__background">
                 <div className="about__background-body">
