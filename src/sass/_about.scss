@@ -146,8 +146,13 @@
             .about__intro-text {
                 order: 2;
 
+                h1, ul li {
+                    text-align: left;
+                }
+
                 p {
                     font-size: 1.3rem;
+                    text-align: left;
                 }
             }
         }
