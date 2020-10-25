@@ -70,11 +70,13 @@
         h1 {
             color: #fff;
             font-size: 1.4rem;
-            padding: 2rem;
             letter-spacing: 7px;
 
             a:link, a:visited {
                 color: #fff;
+                padding: 2rem;
+                display: block;
+                width: 100%;
             }
         }
     }

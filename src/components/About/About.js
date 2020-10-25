@@ -34,7 +34,7 @@ const About = () => {
                 </div>
             </div>
             <div className="about-client-stories">
-                <h1><Link to="/testimonials">Client Stories</Link></h1>
+                <h1><Link to="/client-stories">Client Stories</Link></h1>
             </div>
             <div className="about__background">
                 <div className="about__background-body">

@@ -25,7 +25,7 @@ function App() {
           <Route path="/training" exact component={Training} />
           <Route path="/kettlebell-club" exact component={KettlebellClub} />
           <Route path="/contact" exact component={Contact} />
-          <Route path="/testimonials" exact component={TestimonialsPage} />
+          <Route path="/client-stories" exact component={TestimonialsPage} />
         </Switch>
       </div>
       <div id="footer">
