@@ -192,9 +192,15 @@
             }
         }
         &__programs {
+            flex-direction: column;
 
             .home__programs-image {
+                width: 100%;
                 order: 1;
+
+                img {
+                    min-width: 100%;
+                }
             }
 
             .home__programs-content {
@@ -205,6 +211,7 @@
                 display: flex;
                 flex-direction: column;
                 justify-content: space-between;
+                width: 100%;
 
                 .kb-btn {
                     width: 100%;
