@@ -248,6 +248,48 @@
     }
 }
 
+@media (max-width: 1400px) {
+    .nav {
+        height: 7rem;
+    
+        &__logo {
+            width: 10.5rem;
+    
+            a:link, a:visited {
+                line-height: .6;
+                display: block;
+                width: 100%;
+            }
+        }
+    
+        &__list {
+            width: 45rem;
+    
+            .nav__list-item {
+                font-size: 1rem;
+            }
+        }
+    
+        .overlay {
+    
+            &__list {
+    
+                .overlay__list-item {
+        
+                    a:link, a:visited {
+                        font-size: 1rem;
+                    }
+    
+                    .chevron {
+                        font-size: 1.3rem;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
 @media (max-width: 700px) {
     .nav {
         .hamburger {

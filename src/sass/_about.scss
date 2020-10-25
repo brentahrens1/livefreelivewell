@@ -127,6 +127,46 @@
     }
 }
 
+@media (max-width: 1400px) {
+    .about {
+        margin-top: 7rem;
+    
+        p, li {
+            font-size: 1.1rem;
+            line-height: 1.7;
+        }
+    
+        h1 {
+            font-size: 1.2rem;
+        }
+    
+        &__intro {
+            
+            .about__intro-text {
+    
+                h1 {
+                    text-transform: uppercase;
+                    margin-bottom: .5rem;
+                    letter-spacing: 7px;
+                    text-align: right;
+                    color: #153F6D;
+                }
+    
+                p, li {
+                    font-size: 1.1rem;
+                }
+            }
+        }
+    
+        .about-client-stories {
+    
+            h1 {
+                font-size: 1.1rem;
+            }
+        }
+    }
+}
+
 @media (max-width: 800px) {
     
     .about {

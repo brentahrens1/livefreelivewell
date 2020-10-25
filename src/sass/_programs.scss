@@ -66,6 +66,29 @@
     }
 }
 
+@media (max-width: 1400px) {
+    .program {
+    
+        &__info {
+
+            h1, h2 {
+                font-size: 1.2rem;
+            }
+    
+            ul {
+    
+                li {
+                    font-size: 1.1rem;
+                }
+            }
+    
+            button {
+                font-size: 1.1rem;
+            }
+        }
+    }
+}
+
 @media (max-width: 900px) {
     .program {
         flex-direction: column;

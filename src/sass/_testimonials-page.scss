@@ -30,6 +30,22 @@
     }
 }
 
+@media (max-width: 1400px) {
+    .testimonials-page {
+    
+        h1 {
+            font-size: 20px;
+        }
+    
+        .page {
+    
+            p, h3 {
+                font-size: 1.1rem;
+            }
+        }
+    }
+}
+
 @media (max-width: 800px) {
     .testimonials-page {
         padding: 1rem;
