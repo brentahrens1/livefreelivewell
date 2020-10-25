@@ -167,6 +167,21 @@
     }
 }
 
+@media (max-width: 1200px) {
+    .about {
+    
+        &__intro {
+            padding-right: 2rem;
+            padding-left: 2rem;
+        }
+
+        &__background {
+            padding-right: 2rem;
+            padding-left: 2rem;
+        }
+    }
+} 
+
 @media (max-width: 800px) {
     
     .about {
