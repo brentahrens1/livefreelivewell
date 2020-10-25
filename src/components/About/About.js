@@ -13,7 +13,7 @@ const About = () => {
                 <div className="about__intro-text">
                     <div className="section">
                         <h1>About Me</h1>
-                        <p className="about-first-p">In the last decade, I have worked in a variety of roles within the fitness industry., from personal trainer to fitness manager, leading my team to success. No matter the position, I never forget the focus on the client and their goals, whether it be weight loss, injury prevention or athletic development. I have dedicated myself to understanding my clients, their health, and their fitness goals. I believe in creating a solid foundation based on a continuous approach to long term health.</p>
+                        <p className="about-first-p">In the last decade, I have worked in a variety of roles within the fitness industry, from personal trainer to fitness manager, leading my team to success. No matter the position, I never forget the focus on the client and their goals, whether it be weight loss, injury prevention or athletic development. I have dedicated myself to understanding my clients, their health, and their fitness goals. I believe in creating a solid foundation based on a continuous approach to long term health.</p>
                     </div>
                     <div className="section">
                         <h1>Why LIVEFREELIVEWELL?</h1>
@@ -53,8 +53,8 @@ const About = () => {
                             <li>FREE 2 week Trial </li>
                             <li>Self-Paced Program With Metrics Tracking Analytics</li>
                             <li>One Virtual Personal Training Session</li>
-                            <li>Access To Virtual Live Workout + Q&A on Wednesdays</li>
-                            <li>Exclusive Preview Of Programs To Help You decide best fit</li>
+                            <li>Access To Virtual Live Workout + Q&A</li>
+                            <li>Exclusive Preview Of Programs To Help You decide Best Fit</li>
                         </ul>
                     </div>
                 </div>

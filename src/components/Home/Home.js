@@ -16,7 +16,7 @@ const Home = () => {
             <div className="home__card">
                 <div className="home__card-cta">
                     <h1>Start your<br /> fitness journey</h1>
-                    <p>Begin with a free 2 week trial</p>
+                    <p>Begin With a FREE 2-Week Trial</p>
                     <button><Link to="/about">Learn More</Link></button>
                 </div>
             </div>
@@ -28,10 +28,10 @@ const Home = () => {
                     <h1>Remote Coaching:</h1>
                     <>
                     <ul>
-                        <li>Train Anytime Anywhere</li>
+                        <li>Train Anywhere, Anytime</li>
                         <li>Video Reference for Each Movement</li>
                         <li>Progress Tracking: Metrics & Pictures</li>
-                        <li>Program Based On Available Equipment</li>
+                        <li>Program Based on Available Equipment</li>
                         <li>Personalized Feedback</li>
                     </ul>
                     <h1>$50/MO</h1>
@@ -44,11 +44,11 @@ const Home = () => {
                     <h1>Kettlebell Club:</h1>
                     <>
                     <ul>
-                        <li>Learn And Refine Kettlebell-Specific Skills</li>
-                        <li>Structured Approach To Prevent Risk Of Injury</li>
+                        <li>Learn & Refine Kettlebell-Specific Skills</li>
+                        <li>Structured Approach To Prevent Risk of Injury</li>
                         <li>Train With Virtual Community</li>
                         <li>Program Tracking: Metrics & Pictures</li>
-                        <li>Saturday 9am PST & 10:30am PT</li>
+                        <li>Saturdays 9AM PST & 10:30AM PST</li>
                     </ul>
                     <h1>$20/MO</h1>
                     </>
@@ -63,17 +63,16 @@ const Home = () => {
                     <img src={training} alt="Personal Training (In-Person or Virtual)" />
                 </div>
                 <div className="home__programs-content">
-                    <h1>Personal Training (In-Person or Virtual):</h1>
+                    <h1>Personal Training (Virtual/In-Person):</h1>
                     <>
                     <ul>
                         <li>Program Specific To Your Goals</li>
-                        <li>Program Based On Available Equipment (virtual)</li>
-                        <li>Meet At Preferred Location (in-person)</li>
+                        <li>Program Based on Available Equipment (Virtual)</li>
+                        <li>Meet At Preferred Location (In-Person)</li>
                         <li>Program Tracking: Metrics & Pictures</li>
                         <li>Live Feedback</li>
                     </ul>
-                    <h1>$15 per session | Virtual</h1>
-                    <h1>$60 per session | In-Person</h1>
+                    <h1>$15/$60 Per Session</h1>
                     </>
                     <button><Link to="/contact">Start Now</Link></button>
                 </div>
@@ -83,13 +82,13 @@ const Home = () => {
                     <h1>Live Workout + Q&A:</h1>
                     <>
                     <ul>
-                        <li>Minimal To No Equiptment Required</li>
+                        <li>Minimal To No Equipment Required</li>
                         <li>Train With Virtual Community</li>
-                        <li>Focus On Fucntional Strength, Stability, and Mobility</li>
-                        <li>20 Minute Discussion On General Health, Fitness, Nutrition Habits & Much More</li>
-                        <li>Wednesday 5PM-PT</li>
+                        <li>Focus on Functional Strength, Stability, & Mobility</li>
+                        <li>20 Minute Discussion on General Health, Fitness, Nutrition, & More</li>
+                        <li>Wednesdays 5PM PST</li>
                     </ul>
-                    <h1>Free Access with purchase of any of the programs.</h1>
+                    <h1>Free Access With Program Purchase</h1>
                     </>
                     <button><Link to="/contact">Start Now</Link></button>
                 </div>
