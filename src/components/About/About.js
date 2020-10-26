@@ -30,7 +30,7 @@ const About = () => {
                     </div>
                 </div>
                 <div className="about__intro-image">
-                    <img src={RodneyProfile} alt="Rodney Lozier" />
+                    <img src={RodneyProfile} alt="LIVEFREELIVEWELL | Profile Picture" />
                 </div>
             </div>
             <div className="about-client-stories">
@@ -39,7 +39,7 @@ const About = () => {
             <div className="about__background">
                 <div className="about__background-body">
                     <div className="about__background-image">
-                        <img src={aboutOne} alt="LIVEFREELIVEWELL | ABOUT" />
+                        <img src={aboutOne} alt="LIVEFREELIVEWELL | Training Session" />
                     </div>
                     <div className="about__background-blurb">
                         <h1>During The Strategy Session</h1>

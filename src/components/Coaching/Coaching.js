@@ -12,7 +12,7 @@ const Coaching = () => {
         <div className="program">
             <div className="program__gallery">
                 <div className="program__gallery-image one">
-                    <img src={picOne} alt="LIVEFREELIVEWELL | REMOTE COACHING"/>
+                    <img src={picOne} alt="LIVEFREELIVEWELL | Remote Coaching"/>
                 </div>
                 {/* <div className="program__gallery-image two">
                     <img src={picTwo} alt="LIVEFREELIVEWELL | REMOTE COACHING 2"/>

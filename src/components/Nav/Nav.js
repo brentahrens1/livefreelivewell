@@ -12,7 +12,7 @@ const Nav = () => {
     return (
         <div className="nav">
             <div className="nav__logo">
-                <Link to="/"><img src={navLogo} alt="LIVEFREELIVEWELL | LOGO" /></Link>
+                <Link to="/"><img src={navLogo} alt="LIVEFREELIVEWELL | Logo" /></Link>
             </div>
             <ul className="nav__list">
                 <li className="nav__list-item"><a href="#">Programs</a>
