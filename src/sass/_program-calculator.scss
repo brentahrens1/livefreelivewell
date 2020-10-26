@@ -168,6 +168,20 @@
     }
 }
 
+@media (max-width: 1500px) {
+    .program-calculator {
+
+        &__btns {
+
+            button {
+                height: 2.5rem;
+                font-size: 1rem;
+                padding: .2rem;
+            }
+        }
+    }
+}
+
 @media (max-width: 500px) {
     .program-calculator {
     
@@ -178,6 +192,10 @@
 
         &__btns {
             width: 100%;
+
+            button {
+                font-size: 1rem;
+            }
         }
     }
 }
