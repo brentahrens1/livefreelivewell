@@ -36,7 +36,7 @@ const ProgramCalculator = () => {
                     <div className="program-calculator__btns">
                         <button id="remote" className={`${remoteClicked ? 'active' : ''}`} onClick={remote}>Remote Coaching</button>
                         <div className={`${remoteClicked ? "remote-section-visible" : "remote-section-hidden"}`}>
-                            <p>Train on your on your own time using App.</p>
+                            <p>Train on your own time using App.</p>
                         </div>
                         <button id="kettlebell" className={`${kbClicked ? 'active' : ''}`} onClick={kbClub}>Kettlebell Club</button>
                         <div className={`${kbClicked ? "kettlebell-section-visible" : "kettlebell-section-hidden"}`}>
