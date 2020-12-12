@@ -68,7 +68,7 @@ export const programs = [
                         <li>Focus On Fucntional Strength, Stability, and Mobility</li>
                         <li>20 Minute Discussion On General Health, Fitness, Nutrition Habits & Much More</li>
                         <li>Wednesday 5PM-PT</li>
-                        <h4>Free Access with purchase of any of the programs.</h4>
+                        <h4>Train for FREE through December</h4>
                     </ul>
                 </>,
         link: '',

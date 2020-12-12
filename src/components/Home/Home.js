@@ -15,9 +15,9 @@ const Home = () => {
         <div className="home">
             <div className="home__card">
                 <div className="home__card-cta">
-                    <h1>Start your<br /> fitness journey</h1>
-                    <p>Begin With a FREE 2-Week Trial</p>
-                    <button><Link to="/about">Learn More</Link></button>
+                    <h1>Adult Fitness Program</h1>
+                    <p>Take Charge of YOUR Fitness Journey</p>
+                    <button><Link to="/adult-fitness-program">Learn More</Link></button>
                 </div>
             </div>
             <div className="home__programs">
@@ -88,9 +88,9 @@ const Home = () => {
                         <li>20 Minute Discussion on General Health, Fitness, Nutrition, & More</li>
                         <li>Wednesdays 5PM PST</li>
                     </ul>
-                    <h1>Free Access With Program Purchase</h1>
+                    <h1>Train for FREE through December</h1>
                     </>
-                    <button><Link to="/contact">Start Now</Link></button>
+                    <button><a href="https://calendly.com/livefreelivewell/live-workout-q-a" target="_blank">Start Now</a></button>
                 </div>
                 <div className="home__programs-image">
                     <img src={wednesday} alt="Live Workout + Q&A" />
