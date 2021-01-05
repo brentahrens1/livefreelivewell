@@ -88,7 +88,7 @@ const Home = () => {
                         <li>20 Minute Discussion on General Health, Fitness, Nutrition, & More</li>
                         <li>Wednesdays 5PM PST</li>
                     </ul>
-                    <h1>Train for FREE through December</h1>
+                    <h1>Train for FREE through January</h1>
                     </>
                     <button><a href="https://calendly.com/livefreelivewell/live-workout-q-a" target="_blank">Start Now</a></button>
                 </div>
