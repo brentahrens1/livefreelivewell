@@ -1,11 +1,8 @@
 import React from 'react'
 import '../../sass/_programs.scss'
-
-import { Link } from 'react-router-dom'
-
 import picOne from '../../assets/images/programs/remote-coaching.png'
-
 import ProgramCalculator from '../ProgramCalculator/ProgramCalculator'
+import PayPalRemote from '../PayPal/PayPalRemote'
 
 const Coaching = () => {
     return (
@@ -23,17 +20,13 @@ const Coaching = () => {
             </div>
             <div className="program__info">
                 <h1>Remote Coaching</h1>
-
-                <h1>$50/mo</h1>
                 <ul>
-                    <li>Train Anytime Anywhere</li>
-                    <li>Video Reference for Each Movement</li>
-                    <li>Progress Tracking: Metrics & Pictures</li>
-                    <li>Program Based On Available Equipment</li>
+                    <li>Weekly Virtual Training via Zoom</li>
+                    <li>Train Anywhere, Anytime With Training App</li>
+                    <li>Program Based on Available Equipment</li>
                     <li>Personalized Feedback</li>
-                    <li>Free Access To Live Workout and Q&A</li>
                 </ul>
-                <button><Link to="/contact">Start Here</Link></button>
+                <PayPalRemote />
                 <ProgramCalculator />
             </div>
         </div>

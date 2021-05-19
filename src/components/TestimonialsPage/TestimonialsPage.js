@@ -1,5 +1,6 @@
 import React from 'react'
 import '../../sass/_testimonials-page.scss'
+import ReadMoreReact from 'read-more-react';
 
 import { testimonials } from '../../const/testimonials'
 
@@ -10,7 +11,10 @@ const TestimonialsPage = () => {
             {
                 testimonials.map((testimonial, idx) => 
                     <div key={idx} className="page">
-                        <p>"{testimonial.body}"</p>
+                        <ReadMoreReact text={
+                            testimonial.body
+                        }
+                        readMoreText="read more"/>
                         <h3>- {testimonial.name}</h3>
                         <hr />
                     </div>

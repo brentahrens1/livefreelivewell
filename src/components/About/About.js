@@ -42,11 +42,12 @@ const About = () => {
                         <img src={aboutOne} alt="LIVEFREELIVEWELL | Training Session" />
                     </div>
                     <div className="about__background-blurb">
-                        <h1>During The Strategy Session</h1>
+                        <h1>Strategy Session: Meet & Greet via Zoom</h1>
                         <ul>
                             <li>Examine Short Term/Long Term Goals</li>
-                            <li>Assess Movement Patterns</li>
+                            <li>Analyze Habits & Potential Areas of Opportunity</li>
                             <li>Formulate A Plan For Your Fitness Journey</li>
+                            <li>Q&A</li>
                         </ul>
                         <h1>When You Register For The Strategy Session</h1>
                         <ul>

@@ -11,7 +11,7 @@
         height: 100vh;
 
         .home__card-cta {
-            width: 60rem;
+            width: 80%;
             height: 60rem;
             border-radius: 5px;
             padding: 1rem;
@@ -89,6 +89,10 @@
                 letter-spacing: 7px;
                 font-size: 28px;
                 color: #fff;
+            }
+
+            h3 {
+                color: #5978A9; 
             }
 
             ul {

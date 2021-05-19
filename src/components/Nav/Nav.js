@@ -17,9 +17,9 @@ const Nav = () => {
             <ul className="nav__list">
                 <li className="nav__list-item"><a href="#">Programs</a>
                     <ul className="nav__dropdown">
+                        <li className="nav__dropdown-link"><Link to="training">Personal Training</Link></li>
                         <li className="nav__dropdown-link"><Link to="coaching">Remote Coaching</Link></li>
                         <li className="nav__dropdown-link"><Link to="/kettlebell-club">Kettlebell Club</Link></li>
-                        <li className="nav__dropdown-link"><Link to="training">Personal Training</Link></li>
                     </ul>
                 </li>
                 <li className="nav__list-item"><Link to="/about">About</Link></li>
@@ -44,9 +44,9 @@ const Nav = () => {
                             <span className="chevron__bar"></span>
                         </div>
                         <ul className={`overlay__dropdown ${ dropdownOpen ? "show" : "hide" }`}>
+                            <li className="overlay__dropdown-link" onClick={() => setIsOpen(false)}><Link to="/training">Personal Training</Link></li>
                             <li className="overlay__dropdown-link" onClick={() => setIsOpen(false)}><Link to="/coaching">Remote Coaching</Link></li>
                             <li className="overlay__dropdown-link" onClick={() => setIsOpen(false)}><Link to="/kettlebell-club">Kettlebell Club</Link></li>
-                            <li className="overlay__dropdown-link" onClick={() => setIsOpen(false)}><Link to="/training">Personal Training</Link></li>
                         </ul>
                     </li>
                     <li className="overlay__list-item" onClick={() => setIsOpen(false)}><Link to="/about">About</Link></li>

@@ -30,7 +30,76 @@
     }
 
     &__info {
-        h1, h3, li, p {
+        .tier-titles {
+            cursor: pointer;
+            margin-bottom: .8rem;
+            color: #153F6D;
+            border: 1px solid #153F6D;
+            width: 25rem;
+            padding: .5rem;
+            text-align: center;
+        }
+
+        .payment-popup {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100vh;
+            background: rgba(0,0,0,0.4);
+            z-index: 999;
+            
+            &__inner {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                width: 50%;
+                height: 50%;
+                background: #fff;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+                h3 {
+                    color: #153F6D;
+                    margin-bottom: 1rem;
+                    text-align: center;
+                }
+
+                .tier-cta {
+                    width: 90%;
+                }
+
+                .close-paypal-modal {
+                    position: absolute;
+                    top: 1rem;
+                    right: 1rem;
+                    width: 35px;
+                    height: 35px;
+                    cursor: pointer;
+
+                    &__bar {
+                        position: absolute;
+                        width: 35px;
+                        height: 3px;
+                        background: #153F6D;
+                        top: 16px;
+                        left: 0;
+
+                        &:nth-child(1) {
+                            transform: rotate(45deg);
+                        }
+                        &:nth-child(2) {
+                            transform: rotate(-45deg);
+                        }
+                    }
+                }
+            }
+        }
+
+        h1, li, p, h2 {
             margin-bottom: 1rem;
             color: #153F6D;
         }
@@ -99,6 +168,24 @@
         &__gallery {
             margin-bottom: 1rem;
             width: 100%;
+        }
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .program {
+        &__info {
+            .tier-titles {
+                width: 95%;
+            }
+    
+            .payment-popup {
+                
+                &__inner {
+                    width: 95%;
+                    min-height: 300px;
+                }
+            }
         }
     }
 }

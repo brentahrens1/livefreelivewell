@@ -15,9 +15,32 @@ const Home = () => {
         <div className="home">
             <div className="home__card">
                 <div className="home__card-cta">
-                    <h1>Adult Fitness Program</h1>
-                    <p>Take Charge of YOUR Fitness Journey</p>
-                    <button><Link to="/adult-fitness-program">Learn More</Link></button>
+                    <h1>Live your Fitness Journey</h1>
+                    <p>Start With Strategy Session</p>
+                    <button><Link to="/about">Learn More</Link></button>
+                </div>
+            </div>
+            <div className="home__programs pt">
+                <div className="home__programs-image">
+                    <img src={training} alt="Personal Training (In-Person or Virtual)" />
+                </div>
+                <div className="home__programs-content">
+                    <h1>Personalized Coaching</h1>
+                    <>
+                    <h3>Personal Training</h3>
+                    <ul>
+                        <li>One-on-one coaching</li>
+                    </ul>
+                    <h3>Semi-Private Training</h3>
+                    <ul>
+                        <li>Up to 2 participants</li>
+                    </ul>
+                    <h3>Small Group Training</h3>
+                    <ul>
+                        <li>Up to 8 participants</li>
+                    </ul>
+                    </>
+                    <button><Link to="/contact">Learn More</Link></button>
                 </div>
             </div>
             <div className="home__programs">
@@ -28,15 +51,11 @@ const Home = () => {
                     <h1>Remote Coaching:</h1>
                     <>
                     <ul>
-                        <li>Train Anywhere, Anytime</li>
-                        <li>Video Reference for Each Movement</li>
-                        <li>Progress Tracking: Metrics & Pictures</li>
-                        <li>Program Based on Available Equipment</li>
-                        <li>Personalized Feedback</li>
+                        <li>Virtual Training via Zoom</li>
+                        <li>Train Anywhere, Anytime With Training App</li>
                     </ul>
-                    <h1>$50/MO</h1>
                     </>
-                    <button><Link to="/contact">Start Now</Link></button>
+                    <button><Link to="/contact">Register Here</Link></button>
                 </div>
             </div>
             <div className="home__programs kb">
@@ -45,36 +64,13 @@ const Home = () => {
                     <>
                     <ul>
                         <li>Learn & Refine Kettlebell-Specific Skills</li>
-                        <li>Structured Approach To Prevent Risk of Injury</li>
-                        <li>Train With Virtual Community</li>
-                        <li>Program Tracking: Metrics & Pictures</li>
-                        <li>Saturdays 9AM PST & 10:30AM PST</li>
+                        <li>Train Weekly With Virtual Community</li>
                     </ul>
-                    <h1>$20/MO</h1>
                     </>
                     <button className="kb-btn"><Link to="/contact">Join The Club</Link></button>
                 </div>
                 <div className="home__programs-image">
                     <img src={kettlbells} alt="Kettlebell Club" />
-                </div>
-            </div>
-            <div className="home__programs pt">
-                <div className="home__programs-image">
-                    <img src={training} alt="Personal Training (In-Person or Virtual)" />
-                </div>
-                <div className="home__programs-content">
-                    <h1>Personal Training (Virtual/In-Person):</h1>
-                    <>
-                    <ul>
-                        <li>Program Specific To Your Goals</li>
-                        <li>Program Based on Available Equipment (Virtual)</li>
-                        <li>Meet At Preferred Location (In-Person)</li>
-                        <li>Program Tracking: Metrics & Pictures</li>
-                        <li>Live Feedback</li>
-                    </ul>
-                    <h1>$15/$60 Per Session</h1>
-                    </>
-                    <button><Link to="/contact">Start Now</Link></button>
                 </div>
             </div>
             <div className="home__programs qa">
@@ -83,14 +79,10 @@ const Home = () => {
                     <>
                     <ul>
                         <li>Minimal To No Equipment Required</li>
-                        <li>Train With Virtual Community</li>
-                        <li>Focus on Functional Strength, Stability, & Mobility</li>
-                        <li>20 Minute Discussion on General Health, Fitness, Nutrition, & More</li>
-                        <li>Wednesdays 5PM PST</li>
+                        <li>45 minute Training + 20 minute Discussion on General Fitness, Nutrition & More</li>
                     </ul>
-                    <h1>Train for FREE through January</h1>
                     </>
-                    <button><a href="https://calendly.com/livefreelivewell/live-workout-q-a" target="_blank">Start Now</a></button>
+                    <button><a href="https://calendly.com/livefreelivewell/live-workout-q-a" target="_blank">Register Here</a></button>
                 </div>
                 <div className="home__programs-image">
                     <img src={wednesday} alt="Live Workout + Q&A" />

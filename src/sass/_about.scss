@@ -66,6 +66,7 @@
         width: calc(100%  - 6rem);
         margin: 0 auto;
         background: #153F6D;
+        transition: width 300ms ease-in-out;
 
         h1 {
             color: #fff;
@@ -78,6 +79,10 @@
                 display: block;
                 width: 100%;
             }
+        }
+
+        &:hover {
+            width: 100%;
         }
     }
 

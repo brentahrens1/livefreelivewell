@@ -41,17 +41,20 @@ export const programs = [
         path: 'kettlebell-club'
     },
     {
-        title: "Personal Training (In-Person or Virtual)",
+        title: "Personalized Coaching",
         img: training,
         description: <>
+                    <p>Personal Training</p>
                     <ul>
-                        <li>Program Specific To Your Goals</li>
-                        <li>Program Based On Available Equipment (virtual)</li>
-                        <li>Meet At Preferred Location (in-person)</li>
-                        <li>Program Tracking: Metrics & Pictures</li>
-                        <li>Live Feedback</li>
-                        <h4>$15 per session | Virtual</h4>
-                        <h4>$60 per session | In-Person</h4>
+                        <li>One-on-one coaching</li>
+                    </ul>
+                    <p>Semi-Private Training</p>
+                    <ul>
+                        <li>Up to 2 participants</li>
+                    </ul>
+                    <p>Small Group Training</p>
+                    <ul>
+                        <li>Up to 8 participants</li>
                     </ul>
                 </>,
         link: '',

@@ -14,6 +14,11 @@
         width: 50%;
         margin: 0 auto;
 
+        .read-more-button {
+            cursor: pointer;
+            text-decoration: underline;
+        }
+
         p, h3 {
             font-size: 1.3rem;
             color: #153F6D;
