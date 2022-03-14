@@ -1,52 +1,51 @@
 import React, { useState } from 'react'
 import '../../sass/_programs.scss'
 import picOne from '../../assets/images/programs/training-min.png'
-import ProgramCalculator from '../ProgramCalculator/ProgramCalculator'
-import PayPalSmallGroup1 from '../PayPal/TrainingTiers/PayPalSmallGroup1'
-import PayPalSmallGroup2 from '../PayPal/TrainingTiers/PayPalSmallGroup2'
-import PayPalSmallGroup3 from '../PayPal/TrainingTiers/PayPalSmallGroup3'
-import SemiPrivate1 from '../PayPal/TrainingTiers/SemiPrivate1'
-import SemiPrivate2 from '../PayPal/TrainingTiers/SemiPrivate2'
-import SemiPrivate3 from '../PayPal/TrainingTiers/SemiPrivate3'
+// import ProgramCalculator from '../ProgramCalculator/ProgramCalculator'
+// import PayPalSmallGroup1 from '../PayPal/TrainingTiers/PayPalSmallGroup1'
+// import PayPalSmallGroup2 from '../PayPal/TrainingTiers/PayPalSmallGroup2'
+// import PayPalSmallGroup3 from '../PayPal/TrainingTiers/PayPalSmallGroup3'
+// import SemiPrivate1 from '../PayPal/TrainingTiers/SemiPrivate1'
+// import SemiPrivate2 from '../PayPal/TrainingTiers/SemiPrivate2'
+// import SemiPrivate3 from '../PayPal/TrainingTiers/SemiPrivate3'
 
 const Training = () => {
     const [ selectedGroup, setSelectedGroup ] = useState('')
     const [ openModal, setOpenModal ] = useState(false)
 
-    console.log(selectedGroup)
 
-    const payPalTier = [
-        {
-            tier: <SemiPrivate1 />,
-            class: 'semi-private-1',
-            title: 'Semi-Private Training (1x/week)'
-        },
-        {
-            tier: <SemiPrivate2 />,
-            class: 'semi-private-2',
-            title: 'Semi-Private Training (2x/week)'
-        },
-        {
-            tier: <SemiPrivate3 />,
-            class: 'semi-private-3',
-            title: 'Semi-Private Training (3x/week)'
-        },
-        {
-            tier: <PayPalSmallGroup1 />,
-            class: 'small-group-1',
-            title: 'Small Group Training (1x/week)'
-        },
-        {
-            tier: <PayPalSmallGroup2 />,
-            class: 'small-group-2',
-            title: 'Small Group Training (2x/week)'
-        },
-        {
-            tier: <PayPalSmallGroup3 />,
-            class: 'small-group-3',
-            title: 'Small Group Training (3x/week)'
-        },
-    ]
+    // const payPalTier = [
+    //     {
+    //         tier: <SemiPrivate1 />,
+    //         class: 'semi-private-1',
+    //         title: 'Semi-Private Training (1x/week)'
+    //     },
+    //     {
+    //         tier: <SemiPrivate2 />,
+    //         class: 'semi-private-2',
+    //         title: 'Semi-Private Training (2x/week)'
+    //     },
+    //     {
+    //         tier: <SemiPrivate3 />,
+    //         class: 'semi-private-3',
+    //         title: 'Semi-Private Training (3x/week)'
+    //     },
+    //     {
+    //         tier: <PayPalSmallGroup1 />,
+    //         class: 'small-group-1',
+    //         title: 'Small Group Training (1x/week)'
+    //     },
+    //     {
+    //         tier: <PayPalSmallGroup2 />,
+    //         class: 'small-group-2',
+    //         title: 'Small Group Training (2x/week)'
+    //     },
+    //     {
+    //         tier: <PayPalSmallGroup3 />,
+    //         class: 'small-group-3',
+    //         title: 'Small Group Training (3x/week)'
+    //     },
+    // ]
 
     function groupSelector(e) {
         setSelectedGroup(e.target.className)
@@ -90,7 +89,7 @@ const Training = () => {
                     <li>Personalized Feedback</li>
                     <li>Train & Challenge With a Team</li>
                 </ul>
-                <h2>Select a plan</h2>
+                {/* <h2>Select a plan</h2>
                 {
                     payPalTier.map((tier, id) => {
                         return (
@@ -119,7 +118,7 @@ const Training = () => {
                         null
                     })
                 }
-                <ProgramCalculator />
+                <ProgramCalculator /> */}
             </div>
         </div>
     )

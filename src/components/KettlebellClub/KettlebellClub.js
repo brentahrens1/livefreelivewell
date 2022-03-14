@@ -1,10 +1,10 @@
 import React, { useEffect } from 'react'
 import '../../sass/_programs.scss'
-import PayPalKB from '../PayPal/PayPalKB'
+// import PayPalKB from '../PayPal/PayPalKB'
 
 import { Link } from 'react-router-dom'
 
-import ProgramCalculator from '../ProgramCalculator/ProgramCalculator'
+// import ProgramCalculator from '../ProgramCalculator/ProgramCalculator'
 
 import picOne from '../../assets/images/programs/kettlebelll-club-min.png'
 
@@ -32,8 +32,8 @@ const KettlebellClub = () => {
                     <li>Train With Virtual Community</li>
                     <li>Saturday 9AM PST/12PM EST</li>
                 </ul>
-                <PayPalKB />
-                <ProgramCalculator />
+                {/* <PayPalKB />
+                <ProgramCalculator /> */}
             </div>
         </div>
     )

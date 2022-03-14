@@ -1,8 +1,8 @@
 import React from 'react'
 import '../../sass/_programs.scss'
 import picOne from '../../assets/images/programs/remote-coaching.png'
-import ProgramCalculator from '../ProgramCalculator/ProgramCalculator'
-import PayPalRemote from '../PayPal/PayPalRemote'
+// import ProgramCalculator from '../ProgramCalculator/ProgramCalculator'
+// import PayPalRemote from '../PayPal/PayPalRemote'
 
 const Coaching = () => {
     return (
@@ -26,8 +26,8 @@ const Coaching = () => {
                     <li>Program Based on Available Equipment</li>
                     <li>Personalized Feedback</li>
                 </ul>
-                <PayPalRemote />
-                <ProgramCalculator />
+                {/* <PayPalRemote />
+                <ProgramCalculator /> */}
             </div>
         </div>
     )

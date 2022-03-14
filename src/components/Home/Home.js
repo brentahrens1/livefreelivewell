@@ -73,21 +73,6 @@ const Home = () => {
                     <img src={kettlbells} alt="Kettlebell Club" />
                 </div>
             </div>
-            <div className="home__programs qa">
-                <div className="home__programs-content">
-                    <h1>Live Workout + Q&A:</h1>
-                    <>
-                    <ul>
-                        <li>Minimal To No Equipment Required</li>
-                        <li>45 minute Training + 20 minute Discussion on General Fitness, Nutrition & More</li>
-                    </ul>
-                    </>
-                    <button><a href="https://calendly.com/livefreelivewell/live-workout-q-a" target="_blank">Register Here</a></button>
-                </div>
-                <div className="home__programs-image">
-                    <img src={wednesday} alt="Live Workout + Q&A" />
-                </div>
-            </div>
         </div>
     )
 }
